@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+
+public class EmployeeTeste {
+
+	public static void main(String[] args) {
+		
+		Employee employee = new Employee();
+		String nome = JOptionePane.showInputDialog("Informe seu nome:");
+		employee.setNome(nome);
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+public class HeartRates {
+
+	private String nome;
+	private String sobrenome;
+	private int dia;
+	private int mes;
+	private int ano;
+	
+	public HeartRates() {
+		this.nome = "";
+		this.sobrenome = "";
+		this.dia = 0;
+		this.mes = 0;
+		this.ano = 0;
+	}
+	
+	
+}

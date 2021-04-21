@@ -1,0 +1,34 @@
+
+import javax.swing.JOptionPane;
+
+public class HeartRatesChamada {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HeartRates controle = new HeartRates("","",0,0,0,0,0,0,0.0,0.0);
+		
+		String anoAtual = JOptionPane.showInputDialog("Informe o ano atual:");
+		int anoAtualInt = Integer.parseInt(anoAtual);
+		controle.setAnoAtual(anoAtualInt);
+		
+		String dia = JOptionPane.showInputDialog("Informe o dia do seu nome:");
+		int diaDia = Integer.parseInt(dia);
+		controle.setDia(diaDia);
+		
+		String mes = JOptionPane.showInputDialog("Informe o mes do seu nascimento");
+		int mesMes = Integer.parseInt(mes);
+		controle.setMes(mesMes);
+				
+		String Idade = JOptionPane.showInputDialog("Informe o ano do seu nascimento:");
+		int anoAno = Integer.parseInt(Idade);
+		controle.setAnoNsc(anoAno);
+		
+				
+		JOptionPane.showMessageDialog(null,controle.calcularIdade());
+		JOptionPane.showMessageDialog(null,controle.calculaFrequenciaMaxima());
+		JOptionPane.showMessageDialog(null,controle.calculaFrequenciaCardiacaAlvo());
+	}
+
+}
+

@@ -1,0 +1,19 @@
+package Invoice;
+
+public class invoiceTeste {
+
+	public static void main(String[] args) {
+		
+		Invoice fatura = new Invoice();
+			fatura.setNumero("1");
+			fatura.setDescricao("TESTE")
+			fatura.setQuantidade(10);
+			fatura.setPreco(50.0);
+			
+			String mensagem =String.format("Dados:%n %s%s%d%.2f", fatura.getNumero(), fatura.getDescricao(), fatura.getQuantidade(), fatura.getPreco());
+			
+			JOptionPane.showMessageDialog(null,);
+
+	}
+
+}

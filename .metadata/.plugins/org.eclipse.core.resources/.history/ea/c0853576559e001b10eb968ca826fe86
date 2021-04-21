@@ -1,0 +1,16 @@
+
+public class DateTeste {
+
+	public static void main(String[] args) {
+		
+		Date encontro = new Date();
+		
+		encontro.setDia(22);
+		encontro.setMes(09);
+		encontro.setAno(1998);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package account;
+
+import javax.swing.JOptionPane;
+
+public class Invoice {
+	
+	private String numero;
+	private String descricao;
+	private int quantidade;
+	private double preco;
+	
+	public Invoice() {
+		
+		this.numero = "";
+		this.descricao = "";
+		this.quantidade = 0;
+		this.preco = 0.0;
+		
+		
+	}
+	
+
+}

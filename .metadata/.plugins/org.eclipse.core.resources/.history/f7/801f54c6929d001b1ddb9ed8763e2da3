@@ -1,0 +1,13 @@
+public class Employee {
+	private String nome;
+	private String sobrenome;
+	private double salario;
+	
+	public Employee() {
+		this.nome = "";
+		this.sobrenome = "";
+		this.salario = 0.0;
+	}
+	
+	
+}

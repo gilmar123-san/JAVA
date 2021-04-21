@@ -1,0 +1,14 @@
+package Invoice;
+
+public class invoiceTeste {
+
+	public static void main(String[] args) {
+		
+		
+		Invoice fatura = new Invoice();
+		
+		
+
+	}
+
+}
