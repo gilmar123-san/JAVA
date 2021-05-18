@@ -11,7 +11,7 @@ public class DesenhoTeste {
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		janela.add(painel);
-		janela.setSize(200,200);
+		janela.setSize(700,700);
 		janela.setVisible(true);
 	}
 

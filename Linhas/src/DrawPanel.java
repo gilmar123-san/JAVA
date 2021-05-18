@@ -7,7 +7,7 @@ public class DrawPanel extends JPanel{
 	public void paintComponent(Graphics g) {
 		
 		//chama paintComponent para assegurar que o paniel é exibido corretamente
-		super.paintComponent(g);
+		//super.paintComponent(g);
 		
 		int width= getWidth();//largura total
 		int height = getHeight();//Altura total
