@@ -39,13 +39,6 @@ public class Palavras {
 		}
 		
 	}
-	
-		/*for(int i=1; i <= this.palavra.length(); i++) {
-			
-			if(vetor[i].substring(0,1).equals("/")) {
-				cont++;				
-			}
-		}*/
 		
 		vetor01 = new String[cont];
 		

@@ -27,7 +27,7 @@ public class Testes {
 			Obs.: O Usuário deverá escolher a dimensão e os valores da matriz, sendo eles positivos ou negativos. 
 
 		  */
-		/*
+		
 		Matriz matriz = new Matriz();
 		
 		String entrada02 = JOptionPane.showInputDialog("Insira a quantidade de linhas da matriz: ");
@@ -40,17 +40,7 @@ public class Testes {
 		
 		JOptionPane.showMessageDialog(null,matriz.getMatriz());
 		
-		String entrada04 = JOptionPane.showInputDialog("Informe o valor a ser inserido na coluna da linha: ");
-		int conversao03 = Integer.parseInt(entrada01);
-		matriz.setValoresMatriz(conversao03);
 		
-		String entrada05 = JOptionPane.showInputDialog("Informe o valor a ser inserido na coluna da linha: ");
-		int conversao04 = Integer.parseInt(entrada02);
-		matriz.setValoresMatriz(conversao04);
-		
-		String entrada06 = JOptionPane.showInputDialog("Informe o valor a ser inserido na coluna da linha :");
-		int conversao05 = Integer.parseInt(entrada03);
-		matriz.setValoresMatriz(conversao05);*/
 		
 		/*3)	Construa um algoritmo que retorne como resultado as posições do jogador obtido durante cada jogada. 
 			Exemplo:
