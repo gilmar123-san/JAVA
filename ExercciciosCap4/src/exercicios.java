@@ -873,7 +873,7 @@ public class exercicios {
 				tem um valor posicional de 1 e o próximo dígito à esquerda um valor posicional de 10, depois 100, depois 1.000 e assim por diante. O
 				número decimal 234 pode ser interpretado como 4 * 1 + 3 * 10 + 2 * 100. No sistema de número binário, o dígito mais à direita tem um
 				valor posicional de 1, o próximo dígito à esquerda um valor posicional de 2, depois 4, depois 8 e assim por diante. O equivalente decimal
-				do binário 1.101 é 1 * 1 + 0 * 2 + 1 * 4 + 1 * 8 ou 1 + 0 + 4 + 8 ou 13.]*/			
+				do binário 1.101 é 1 * 1 + 0 * 2 + 1 * 4 + 1 * 8 ou 1 + 0 + 4 + 8 ou 13.]			
 			
 						
 			int decimal = 0;
@@ -899,10 +899,134 @@ public class exercicios {
 				}
 				
 				JOptionPane.showMessageDialog(null, "O valor do binário informado é "+aux+" na base decimal!");
+				
+				
+				4.32 (Padrão de tabuleiro de damas de asteriscos) Escreva um aplicativo que utiliza apenas as instruções de saída
+				System.out.print("* ");
+				System.out.print(" ");
+				System.out.println();
+				para exibir o padrão de tabuleiro de damas a seguir. Uma chamada de método System.out.println sem argumentos faz com que o programa
+				gere saída de um único caractere de nova linha. [Dica: as instruções de repetição são requeridas.
+				
+				* * * * * * * *
+				 * * * * * * * *
+				* * * * * * * *
+				 * * * * * * * *
+				* * * * * * * *
+				 * * * * * * * *
+				* * * * * * * *
+				 * * * * * * * * 				 				 					
+		
+			String resposta = JOptionPane.showInputDialog("Informe o número de posições do tabuleiro:");
+			int setResposta = Integer.parseInt(resposta);
+			
+			int contador=1;
+			
+			while(contador <= setResposta){
+					
+				
+				if(contador % 2 ==0) {
+					
+					System.out.print(" ");
+					
+					int contador01 = 1;
+					while(contador01 <= setResposta) {
+																												
+						if(contador01 == setResposta) {
+							System.out.print("*"+"\n");	
+						}else {
+							System.out.print("*");	
+						}
+							
+						contador01++;
+					}
+				}else {
+					int contador01 = 1;
+					while(contador01 <= setResposta) {												
 						
+							if(contador01 == setResposta) {
+								System.out.print("*"+"\n");	
+							}else {
+								System.out.print("*");	
+							}
+							
+						contador01++;
+					}
+				}		
+				
+				contador++;
+			}
+			
+			4.33 (Múltiplos de 2 com um loop infinito) Escreva um aplicativo que continue exibindo na janela de comando os múltiplos do inteiro 2
+			— a saber, 2, 4, 8, 16, 32, 64 e assim por diante. Seu loop não deve terminar (isto é, deve criar um loop infinito). O que acontece quando
+			você executa esse programa?
+			
+		
+			int multDois=2;
+			int contador=1;
+			
+			while(contador <= multDois) {
+				System.out.println(multDois);
+				multDois*=2;
+				
+			}
+			
+			
+			4.34 (O que há de errado com esse código?) O que há de errado com a seguinte instrução? Forneça a instrução correta para adicionar 1 à
+			soma de x e y.
+			System.out.println(++(x + y));
+			
+		
+			int x=0;
+			int y =0;
+			
+			System.out.println((++x)+ y);
+			
+			
+			4.35 (Lados de um triângulo) Escreva um aplicativo que lê três valores diferentes de zero inseridos pelo usuário, determina e
+			imprime se eles poderiam representar os lados de um triângulo.
+			
+		
+			int a, b, c;
+		
+			System.out.println("Informe o tamanho dos 3 lados de um triângulo:");
+			a = entrada.nextInt();
+			b = entrada.nextInt();
+			c = entrada.nextInt();
+			
+			if(a == 0 || b == 0 || c==0) {
+				
+				System.out.println("Nenhum dos valores deve ser igual a 0!!"+"\n");
+				
+				
+				while(a == 0 || b == 0 || c==0) {
+					System.out.println("Informe o tamanho dos 3 lados de um triângulo:");
+					a = entrada.nextInt();
+					b = entrada.nextInt();
+					c = entrada.nextInt();
+				}
+				
+			}else if(a == b && b == c) {
+				System.out.println("Poderia ser um Triângulo Equilátero");
+			}else if(a==b && b!=c || a==c && b!=c ) {
+				System.out.println("Poderia ser um Triângulo Isóceles");
+			}else {
+				System.out.println("Poderia ser um Triângulo Escaleno");
+			}
+			
+			
+			4.36 (Lados de um triângulo direito) Escreva um aplicativo que lê três inteiros diferentes de zero, determina e
+			 imprime se eles poderiam representar os lados de um triângulo direito.
+			
+			*/
+		
+		
+					
+		
 	}
 
 }
+
 
 
 
