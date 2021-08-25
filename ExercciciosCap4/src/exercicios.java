@@ -1018,10 +1018,170 @@ public class exercicios {
 			4.36 (Lados de um triângulo direito) Escreva um aplicativo que lê três inteiros diferentes de zero, determina e
 			 imprime se eles poderiam representar os lados de um triângulo direito.
 			
-			*/
+				(FAZER)
+			
+			4.37 (Fatorial) O fatorial de um inteiro não negativo n é escrito como n! (pronuncia-se “n fatorial”) e é definido como segue:
+				n! = n · (n – 1) · (n – 2) · ... · 1 (para valores de n maiores ou iguais a 1)
+				e
+				n! = 1 (para n = 0)
+				Por exemplo, 5! = 5 · 4 · 3 · 2 · 1, o que dá 120.
+				
+				a) Escreva um aplicativo que lê um inteiro não negativo, calcula e imprime seu fatorial.
 		
 		
+					String setFator = JOptionPane.showInputDialog("Informe um inteiro positivo:");
+					int fator = Integer.parseInt(setFator);
 					
+					if(fator < 0) {
+						
+						while(fator < 0) {
+														
+							setFator = JOptionPane.showInputDialog("Ain, valor negativo detectado!!"+"\n"+"Tente novamente"+"\n"+"Informe um inteiro positivo:");
+							fator = Integer.parseInt(setFator);
+						}
+						
+					}
+					
+					int contador=1;
+					int total=0;
+										
+					while(contador < fator) {
+						
+						if(contador==1) {
+							total += fator;
+							System.out.println(total);
+						}else {
+							total*=(fator-(contador-1));
+							System.out.println(total);
+						}
+						
+						contador++;
+					}
+					
+					JOptionPane.showMessageDialog(null, "O fator é: "+total);
+		
+		
+				b) Escreva um aplicativo que estima o valor da constante matemática (e) utilizando a fórmula a seguir. Permita ao usuário inserir o número
+				de termos a calcular.
+				
+				e = 1 + 1/1! + 1/2!+ 1/3!+ …
+				
+					String setTerm = JOptionPane.showInputDialog("Informe quantos termos devemos calcular:");
+					int term = Integer.parseInt(setTerm);
+					
+					if(term < 0) {
+						
+						while(term < 0) {
+														
+							setTerm = JOptionPane.showInputDialog("Ain, valor negativo detectado!!"+"\n"+"Tente novamente"+"\n"+"Informe um inteiro positivo:");
+							term = Integer.parseInt(setTerm);
+						}
+						
+					}										
+						int contador02=1;
+						double  total=1;
+						int total02=0;
+											
+						while(contador02 < term) {
+							
+							if(contador02==1) {
+								total02 += term;
+									if(term ==1) {
+										
+										total02*=(term-(contador02-1));
+										
+									}
+								System.out.println(total02);
+							}else {
+								total02*=(term-(contador02-1));
+								System.out.println(total02);
+							}
+							
+							total += (double) 1/total02;
+							System.out.println(total);
+							
+							contador02++;
+						}
+						
+						
+					String retorno = String.format("O valor de 'e' é: %.5f", total);
+					JOptionPane.showMessageDialog(null, retorno);*/		
+		
+				/*c) Escreva um aplicativo que computa o valor de e*x utilizando a fórmula a seguir. Permita ao usuário inserir o número de termos a calcular.
+				e*X = 1+ x/1! + x*2/2! + x*3/3! + …*/
+		
+				String setXiz = JOptionPane.showInputDialog("Informe o valor de base:");
+				int base = Integer.parseInt(setXiz);
+				
+				if(base < 0) {
+					
+					while(base < 0) {
+													
+						setXiz = JOptionPane.showInputDialog("Ain, valor negativo detectado!!"+"\n"+"Tente novamente"+"\n"+"Informe um inteiro positivo:");
+						base = Integer.parseInt(setXiz);
+					}
+					
+				}
+		
+				String setTerm = JOptionPane.showInputDialog("Informe quantos termos devemos calcular:");
+				int expente = Integer.parseInt(setTerm);
+				
+				if(expente < 0) {
+					
+					while(expente < 0) {
+													
+						setTerm = JOptionPane.showInputDialog("Ain, valor negativo detectado!!"+"\n"+"Tente novamente"+"\n"+"Informe um inteiro positivo:");
+						expente = Integer.parseInt(setTerm);
+					}
+					
+				}
+								
+					int contador=1;
+					double  total=1;
+					int total02=0;
+					double aux=1;
+					//System.out.println(aux);
+							
+					while(contador <= expente) {						
+						//calculando o fator de cada denominador
+							if(contador==1) {
+								
+								total02 += expente;
+								
+									if(expente ==1) {	
+										
+										total02*=expente;
+										
+									}
+	
+							}else {
+																
+								total02*=(expente-(contador-1));
+								
+							}
+							
+						//calculando o valor da potência de x
+																	
+							aux *= base;
+						
+													
+						System.out.printf("%.2f %n",aux);
+							
+						//juntando as parte da formula
+							
+							total += aux /total02;
+							
+							System.out.printf("%.3f %n",total);
+						
+						
+						contador++;
+					}
+					
+				
+				String retorno = String.format("O valor de 'e' é: %.2f", total);
+				JOptionPane.showMessageDialog(null, retorno);
+		
+				
 		
 	}
 
