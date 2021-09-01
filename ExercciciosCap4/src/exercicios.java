@@ -1108,7 +1108,7 @@ public class exercicios {
 					JOptionPane.showMessageDialog(null, retorno);*/		
 		
 				/*c) Escreva um aplicativo que computa o valor de e*x utilizando a fórmula a seguir. Permita ao usuário inserir o número de termos a calcular.
-				e*X = 1+ x/1! + x*2/2! + x*3/3! + …*/
+				e*X = 1+ x/1! + x*2/2! + x*3/3! + …
 		
 				String setXiz = JOptionPane.showInputDialog("Informe o valor de base:");
 				int base = Integer.parseInt(setXiz);
@@ -1181,8 +1181,117 @@ public class exercicios {
 				String retorno = String.format("O valor de 'e' é: %.2f", total);
 				JOptionPane.showMessageDialog(null, retorno);
 		
+				4.38 (Impondo privacidade com criptografia) O crescimento explosivo de comunicação e armazenamento de dados na internet e em
+				computadores conectados por ela aumentou muito a preocupação com a privacidade. O campo da criptografia envolve a codificação de
+				dados para torná-los difíceis de acessar (e espera-se — com os esquemas mais avançados — impossíveis de acessar) para usuários sem
+				autorização de leitura. Nesse exercício, você investigará um esquema simples para criptografar e descriptografar dados. Uma empresa que
+				quer enviar dados pela internet pediu-lhe que escrevesse um programa que criptografe dados a fim de que eles possam ser transmitidos
+				com maior segurança. Todos os dados são transmitidos como inteiros de quatro dígitos. Seu aplicativo deve ler um inteiro de quatro dígitos
+				inserido pelo usuário e criptografá-lo da seguinte maneira: substitua cada dígito pelo resultado da adição de 7 ao dígito, obtendo o restante
+				depois da divisão do novo valor por 10. Troque então o primeiro dígito pelo terceiro e o segundo dígito pelo quarto. Então, imprima o
+				inteiro criptografado. Escreva um aplicativo separado que receba a entrada de um inteiro de quatro dígitos criptografado e o descriptografe
+				(revertendo o esquema de criptografia) para formar o número original. [Projeto de leitura opcional: pesquise a “criptografia de chave
+				pública” em geral e o esquema de chave pública específica PGP (Pretty Good Privacy). Você também pode querer investigar o esquema
+				RSA, que é amplamente usado em aplicativos robustos industriais.]*/
 				
+			//Recebendo os dados do usuário e criptografando:
 		
+				String dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dígitos:");
+				int setDados = Integer.parseInt(dados);
+				
+				if(setDados > 10000) {
+					JOptionPane.showMessageDialog(null, "ain. Valor muito grande!!");
+						while(setDados > 10000) {
+							dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dígitos:");
+							setDados = Integer.parseInt(dados);
+						}
+				}else if(setDados < 1000){
+					
+					JOptionPane.showMessageDialog(null, "ain. Valor muito pequeno!!");
+						while(setDados < 1000) {
+							dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dígitos:");
+							setDados = Integer.parseInt(dados);
+						}
+				}
+				
+				//Somando cada item inserido mais 7
+				
+				//System.out.println(dados.length());
+				
+				int contador = 0;
+				int aux02 = 0;
+				int setAux = 0;
+				String aux = "";
+				String fim = "";
+				int vetor[] = new int [dados.length()];
+
+				
+				
+					while(contador <= dados.length()-1){
+						
+						if(contador != dados.length()){
+							aux = dados.substring(contador,contador+1);
+							setAux = Integer.parseInt(aux);							
+						}											
+										
+						aux02 = setAux+7;											
+						//System.out.println(aux02);
+						
+						vetor[contador] = aux02 % 10;
+						System.out.println(vetor[contador]);				
+						contador++;
+					}
+					
+					contador = 0;
+					setAux=0;
+					
+					while(contador <= 3){
+						setAux = vetor[contador];
+						if(contador == 0) {
+							vetor[contador] = vetor[contador+2];
+							vetor[contador+2] = setAux;						
+						}else if(contador == 1){
+							vetor[contador] = vetor[contador+2];
+							vetor[contador+2] = setAux;	
+						}
+						fim+=vetor[contador];
+						
+						contador++;
+					}
+												
+				//aux02 = Integer.parseInt(fim);
+								
+				String retorno = String.format("Novo valor criptografado:%s",fim);
+				JOptionPane.showMessageDialog(null, retorno);				
+		
+				//Desemcriptando o valor
+				
+				fim="";
+				contador = 0;
+				setAux=0;				
+				
+				while(contador <= 3){
+					setAux = vetor[contador];
+					if(contador == 0) {
+						vetor[contador] = vetor[contador+2];
+						vetor[contador+2] = setAux;						
+					}else if(contador == 1){
+						vetor[contador] = vetor[contador+2];
+						vetor[contador+2] = setAux;	
+					}
+					
+					if(vetor[contador]-7==1) {
+						fim += (vetor[contador]-7);
+					}else {
+						fim+= (vetor[contador]+10)-7;
+					}
+					
+					contador++;
+				}							
+				
+				retorno = String.format("Valor descriptografado:%s",fim);
+				JOptionPane.showMessageDialog(null, retorno);
+				
 	}
 
 }
