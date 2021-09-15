@@ -3,7 +3,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class exercicios {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -1192,7 +1192,7 @@ public class exercicios {
 				inteiro criptografado. Escreva um aplicativo separado que receba a entrada de um inteiro de quatro dígitos criptografado e o descriptografe
 				(revertendo o esquema de criptografia) para formar o número original. [Projeto de leitura opcional: pesquise a “criptografia de chave
 				pública” em geral e o esquema de chave pública específica PGP (Pretty Good Privacy). Você também pode querer investigar o esquema
-				RSA, que é amplamente usado em aplicativos robustos industriais.]*/
+				RSA, que é amplamente usado em aplicativos robustos industriais.]
 				
 			//Recebendo os dados do usuário e criptografando:
 		
@@ -1292,23 +1292,101 @@ public class exercicios {
 				retorno = String.format("Valor descriptografado:%s",fim);
 				JOptionPane.showMessageDialog(null, retorno);
 				
+				
+				4.39 (Crescimento demográfico mundial) A população mundial cresceu consideravelmente ao longo dos séculos. O crescimento contínuo
+				pode, por fim, desafiar os limites de ar respirável, água potável, terra fértil para agricultura e outros recursos limitados.
+				Há evidência de que o crescimento tem reduzido a velocidade nos últimos anos e que a população mundial pode chegar ao ponto
+				máximo em algum momento  nesse século e, então, começar a diminuir. Para esse exercício, pesquise questões de crescimento demográfico
+				mundial on-line. Não deixe de investigar vários pontos de vista.
+				Obtenha estimativas da população mundial atual e sua taxa de crescimento (a porcentagem pela qual provavelmente aumentará neste
+				ano). Escreva um programa que calcule o crescimento demográfico mundial anual dos próximos 75 anos, utilizando a premissa simplificadora
+				de que a taxa de crescimento atual ficará constante. Imprima os resultados em uma tabela. A primeira coluna deve exibir os anos
+				do ano 1 ao ano 75. A segunda coluna deve exibir a população mundial esperada no fim desse ano. A terceira deve exibir o aumento numérico
+				na população mundial que ocorreria nesse ano. Utilizando os seus resultados, determine o ano em que a população dobraria com relação
+				ao número de hoje se a taxa de crescimento do ano atual persistisse.*/
+				
+				//taxa de crescimento populacional em 2020 segundo a ONU: 1.1%
+				//população mundial em 2020 segundo a ONU: 7.794.799.000
+				
+				//Criando e inicializando variáveis globais
+				String porcentagem;
+				String popTotal = "";
+				String controleAnos = "";
+				double setPorcentagem= 0.0;
+				double setPopTotal = 0.0;
+				int setControleAnos = 0;
+				
+				do {
+					
+					porcentagem = JOptionPane.showInputDialog("Informe a taxa de crecimento anual da população mundial:");
+					if(porcentagem.length() > 1) {
+						
+						setPorcentagem = Double.parseDouble(porcentagem);
+						System.out.println("setPorcentagem: "+setPorcentagem);
+					}
+					
+					
+					popTotal = JOptionPane.showInputDialog("Informe o valor da população mundial:");					
+					if(popTotal.length() > 1) {
+						
+						setPopTotal = Double.parseDouble(popTotal);
+						System.out.println("setPopTotal: "+setPopTotal);
+					}	
+					
+					controleAnos = JOptionPane.showInputDialog("Informe quantos anos serão calculados:");					
+					if(controleAnos.length() > 1) {
+						
+						setControleAnos = Integer.parseInt(controleAnos);
+						System.out.println("setControleAnos: "+setControleAnos);
+					}	
+
+				}while(porcentagem.length()<1 || popTotal.length() < 1 || controleAnos.length() < 1 );
+				
+				double aux = 0.0;
+				int linha[] = new int[setControleAnos];
+				double colunas[] = new double[3];
+				
+				//int tabela [][] = new int [setControleAnos][3];
+				
+				int i = 0;
+				int j = 0;						
+				
+				for(; i < setControleAnos; i++) {
+					
+					for(; j < 3 ;j++) {
+						
+						linha[i]=i;
+						
+						if(j == 0) {
+						
+							colunas[j] = i+1;//A primeira coluna deve exibir os anos do ano 1 ao ano 75.
+							
+							System.out.printf("%2.0f | ",colunas[j]);
+							
+						}else if(j == 1) {
+							
+							//tabela[i][j] = (setPorcentagem/100) *setPopTotal;//A segunda coluna deve exibir a população mundial esperada no fim desse ano.
+							
+							colunas[j] = (setPorcentagem/100) * (setPopTotal*i);
+							
+							System.out.printf("%2.0f | ",colunas[j]);
+							
+						}else if(j ==2){
+							
+							//tabela[i][j] = tabela[i-1][j-1];//A terceira deve exibir o aumento numérico na população mundial que ocorreria nesse ano.
+							colunas[j] = colunas[j-1];
+							System.out.printf("%2.0f\n",colunas[j]);
+							
+						}
+						
+						
+						
+					}
+					j = 0;
+
+				}
+									
+		
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
