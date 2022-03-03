@@ -16,7 +16,7 @@ public class Exercicio5_1 extends JPanel {
 	}
 
 	public void paintComponent(Graphics g) {
-		super.paintComponent(g);
+		//super.paintComponent(g);
 
 		/*
 		 * 5.1 Desenhe 12 círculos concêntricos no centro de um JPanel (Figura 5.29). O
@@ -37,9 +37,9 @@ public class Exercicio5_1 extends JPanel {
 		 * aplicação interessante dos computadores é exibir diagramas e gráficos de
 		 * barras. Escreva um aplicativo que leia cinco números entre 1 e 30. Para cada
 		 * número que é lido, seu programa deve exibir o mesmo número de asteriscos
-		 * adjacentes. Por exemplo, se seu programa lê o número 7, ele deve exibir
-		 * *******. Exiba as barras dos asteriscos depois de ler os cinco números.)
-		 */
+		 * adjacentes. Por exemplo, se seu programa lê o número 7, ele deve exibir.
+		 * Exiba as barras dos asteriscos depois de ler os cinco números.)
+		 
 
 		int x = getWidth();
 		int y = getHeight();
@@ -49,7 +49,7 @@ public class Exercicio5_1 extends JPanel {
 				g.drawRect((x/retornoDados.length)*contador, y/retornoDados[contador], (x/(retornoDados.length*2)), y);
 			}
 			contador++;
-		}
+		}*/
 
 	}
 }

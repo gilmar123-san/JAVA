@@ -4,7 +4,7 @@ public class Testes {
 
 	public static void main(String[] args) {
 		
-		/*1)	Construa um programa que o usuário entre com uma sequência de palavras em camelCase e imprima na tela o número de palavras informadas. 
+		/* Concluída - 1)Construa um programa que o usuário entre com uma sequência de palavras em camelCase e imprima na tela o número de palavras informadas. 
 			Exemplo: 
 			 	   Entrada: umDoisTres (3 palavras na string)
 			   Saída: 3
@@ -17,16 +17,17 @@ public class Testes {
 		
 		JOptionPane.showMessageDialog(null,teste.getPalavra());
 		
-		/*2)	Crie um algoritmo que calcule a diferença entre as somas das duas principais diagonais de uma matriz e apresente o resultado.
+		/* Concluída - 2)Crie um algoritmo que calcule a diferença entre as somas das duas principais diagonais de uma matriz e apresente o resultado.
 			Exemplo: 
 			      1   2   3
 			      4   6   6
 			      9   8   9 
 			1ª diagonal: 1 + 6 + 9 = 16
 			2ª diagonal: 3 + 6 + 9 = 18 
-			Obs.: O Usuário deverá escolher a dimensão e os valores da matriz, sendo eles positivos ou negativos. 
+			Obs.: O Usuário deverá escolher a dimensão e os valores da matriz, sendo eles positivos ou negativos. )
+		*/
 
-		  */
+		 
 		
 		Matriz matriz = new Matriz();
 		
@@ -42,7 +43,7 @@ public class Testes {
 		
 		
 		
-		/*3)	Construa um algoritmo que retorne como resultado as posições do jogador obtido durante cada jogada. 
+		/* Em andamento - 3)	Construa um algoritmo que retorne como resultado as posições do jogador obtido durante cada jogada. 
 			Exemplo:
 			   Ranking:
 			      1º lugar: 100 pontos;
@@ -60,7 +61,8 @@ public class Testes {
 			1º lugar (posição obtida na 3ª jogada);
 			Saída esperada do algoritmo: 4, 3, 1.
 			
-			Obs.: O algoritmo deve permitir que o usuário entre com as pontuações do ranking separado por espaço em ordem decrescente. O usuário deve escolher a quantidade de pontuações no Ranking.
+			Obs.: O algoritmo deve permitir que o usuário entre com as pontuações do ranking separado por espaço em ordem decrescente. 
+			O usuário deve escolher a quantidade de pontuações no Ranking.
 			Exemplo:
 			   Quantidade de posições no ranking: 4
 			   Ranking Pontuação: 100 90 90 80
@@ -72,5 +74,13 @@ public class Testes {
 			   Mostrar a saída esperada: 3, 1, 2
 			   */
 					
+			Ranking ranking = new Ranking();
+			
+			String entrada04 = JOptionPane.showInputDialog("Informe as pontuações do Ranking separadas por espaço em ordem decresente:");
+			ranking.setPontos(entrada04);
+			
+			String entrada05 = JOptionPane.showInputDialog("Informe Informe a quantidade de posições no Ranking:");
+			int conversao03 = Integer.parseInt(entrada05);
+			ranking.setPosicao(conversao03);
 	}
 }

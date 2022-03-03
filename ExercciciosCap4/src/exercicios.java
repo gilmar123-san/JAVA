@@ -1309,7 +1309,7 @@ public class exercicios {
 				//população mundial em 2020 segundo a ONU: 7.794.799.000
 				
 				//Criando e inicializando variáveis globais
-				String porcentagem;
+				String porcentagem = "";
 				String popTotal = "";
 				String controleAnos = "";
 				double setPorcentagem= 0.0;
@@ -1343,10 +1343,9 @@ public class exercicios {
 				}while(porcentagem.length()<1 || popTotal.length() < 1 || controleAnos.length() < 1 );
 				
 				double aux = 0.0;
-				int linha[] = new int[setControleAnos];
-				double colunas[] = new double[3];
+
 				
-				//int tabela [][] = new int [setControleAnos][3];
+				double tabela [][] = new double [setControleAnos][3];
 				
 				int i = 0;
 				int j = 0;						
@@ -1355,34 +1354,30 @@ public class exercicios {
 					
 					for(; j < 3 ;j++) {
 						
-						linha[i]=i;
+						tabela [i][j]=i;
 						
 						if(j == 0) {
 						
-							colunas[j] = i+1;//A primeira coluna deve exibir os anos do ano 1 ao ano 75.
+							tabela [i][j]= i+1;//A primeira coluna deve exibir os anos do ano 1 ao ano 75.
 							
-							System.out.printf("%2.0f | ",colunas[j]);
+							System.out.printf("%.0f | ",tabela [i][j]);
 							
 						}else if(j == 1) {
 							
-							//tabela[i][j] = (setPorcentagem/100) *setPopTotal;//A segunda coluna deve exibir a população mundial esperada no fim desse ano.
+
+							tabela [i][j] = (setPorcentagem/100) * (setPopTotal*i);//A segunda coluna deve exibir a população mundial esperada no fim desse ano.
 							
-							colunas[j] = (setPorcentagem/100) * (setPopTotal*i);
+							System.out.printf("%.0f | ",tabela [i][j]);
 							
-							System.out.printf("%2.0f | ",colunas[j]);
-							
-						}else if(j ==2){
-							
-							//tabela[i][j] = tabela[i-1][j-1];//A terceira deve exibir o aumento numérico na população mundial que ocorreria nesse ano.
-							colunas[j] = colunas[j-1];
-							System.out.printf("%2.0f\n",colunas[j]);
+						}else if(j == 2 && i > 0){
+														
+							tabela [i][j]= tabela[i][2];//A terceira deve exibir o aumento numérico na população mundial que ocorreria nesse ano.
+							System.out.printf("%.0f\n",tabela [i][j]);
 							
 						}
-						
-						
-						
+																		
 					}
-					j = 0;
+						j = 0;
 
 				}
 									

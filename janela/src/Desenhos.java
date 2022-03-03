@@ -33,7 +33,7 @@ public class Desenhos extends JPanel{
 		}
 		
 		/*b) Modifique sua resposta da parte (a) para que as linhas se estendam dos quatro cantos, como mostrado na captura de tela da direita na
-		Figura 4.20. As linhas de cantos opostos devem se cruzar no meio.
+		Figura 4.20. As linhas de cantos opostos devem se cruzar no meio.*/
 		
 		int i = 1;
 		Y=0;
@@ -48,7 +48,7 @@ public class Desenhos extends JPanel{
 		
 		i = 1;
 		Y2=0;
-		X02=0;
+		X2=0;
 		X=getWidth();
 		
 		while(i<=15) {
@@ -85,7 +85,7 @@ public class Desenhos extends JPanel{
 		}
 		
 		
-		4.2 A Figura 4.21 exibe dois projetos adicionais criados utilizando-se loops while e drawLine.
+		/*4.2 A Figura 4.21 exibe dois projetos adicionais criados utilizando-se loops while e drawLine.
 		a) Crie o projeto na captura de tela da esquerda na Figura 4.21. Comece dividindo cada borda em um número igual de incrementos (escolhemos
 		15 novamente). A primeira linha inicia no canto superior esquerdo e termina um passo à direita na extremidade inferior. Para
 		cada linha sucessiva, move-se para baixo um incremento na borda esquerda e um incremento para a direita na borda inferior. Continue
@@ -106,7 +106,7 @@ public class Desenhos extends JPanel{
 		}
 		
 		b) Modifique sua resposta da parte (a) para espelhar o projeto em todos os quatro cantos, como mostrado na captura de tela da direita na
-	Figura 4.21.
+	Figura 4.21.}
 		
 		int contador = 1;
 		Y = 0;
@@ -162,10 +162,11 @@ public class Desenhos extends JPanel{
 			X += 97;
 			Y2 -= 47;			
 			contador++;
+		
+		
+		
 		}*/
-		
-		
-	}
 	
+	}	
 
 }
