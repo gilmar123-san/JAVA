@@ -4,6 +4,10 @@ import javax.swing.JPanel;
 
 public class Formas extends JPanel{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int escolha;
 
 	public Formas(int userEscolha) {		

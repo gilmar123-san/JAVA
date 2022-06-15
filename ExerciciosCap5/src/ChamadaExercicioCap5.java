@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.security.SecureRandom;
 
 public class ChamadaExercicioCap5 {
 
@@ -279,48 +278,271 @@ public class ChamadaExercicioCap5 {
 		 * 5.15 para combinar seu código dos quatro triângulos de asteriscos separados,
 		 * de modo que todos os quatro padrões sejam impressos lado a lado. [Dica: faça
 		 * uso inteligente de loops for aninhados.]
+		 * 
+		 * 
+		 * for (int i = 1; i <= 10; i++) {
+		 * 
+		 * for (int j = 1; j <= i; j++) { System.out.print("*"); if (j + 1 > i) { for
+		 * (int a = 1; a <= 11 - i; a++) { System.out.printf("%s", " "); } } }
+		 * 
+		 * for (int j = 10 - (i - 1); j >= 1; j--) { System.out.print("*"); if (j <= 1)
+		 * { for (int a = 1; a <= i; a++) { System.out.printf("%s", " "); } } }
+		 * 
+		 * for (int j = 10 - (i - 1); j >= 1; j--) { if (j == 10-(i-1)) { for (int a =
+		 * 1; a <= i-1; a++) { System.out.print(" "); } } System.out.print("*"); }
+		 * 
+		 * for (int j = 10 - (i - 1); j >= 1; j--) { System.out.print(" "); if (j <= 1)
+		 * { for (int a = 1; a <= i; a++) { System.out.print("*"); } } }
+		 * System.out.println(); }
+		 * 
+		 * 
+		 * 5.23 (Leis de De Morgan) Neste capítulo, discutimos os operadores lógicos &&,
+		 * &, ||, |, ^ e !. As leis de De Morgan às vezes podem tornar mais convenientes
+		 * para expressar uma expressão lógica. Essas leis afirmam que a expressão
+		 * !(condição1 && condição2) é logicamente equivalente à expressão(!condição1 ||
+		 * !condição2). Além disso, a expressão !(condição1|| condição2) é logicamente
+		 * equivalente à expressão (!condição1&& !condição2). Utilize as leis de De
+		 * Morgan para escrever expressões equivalentes para cada uma das expressões a
+		 * seguir, então escreva um aplicativo para mostrar que tanto a expressão
+		 * original como a nova expressão em cada caso produzem o mesmo valor: a) !(x <
+		 * 5) && !(y >= 7) = !((x < 5) || (y >= 7)) b) !(a == b) || !(g != 5) = !((a ==
+		 * b) && (g != 5)) c) !((x <= 8) && (y > 4)) = (!(x <= 8) || !(y > 4)) d) !((i >
+		 * 4) || (j <= 6)) = (!(i > 4) && !(j <= 6))
+		 * 
+		 * 
+		 * int x = 1; int a = 2; int i = 3; int b = 4; int y = 5; int g = 6; int j = 7;
+		 * 
+		 * if(!(x < 5) && !(y >= 7)) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if(!((x < 5) || (y >= 7))) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if(!(a == b) || !(g != 5)) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if(!((a == b) && (g != 5))) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if(!((x <= 8) && (y > 4))) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if((!(x <= 8) || !(y > 4))) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if(!((i > 4) || (j <= 6))) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * if((!(i > 4) && !(j <= 6))) { System.out.println("true"); }else {
+		 * System.out.println("false"); }
+		 * 
+		 * 5.24 (Programa de impressão de losangos) Escreva um aplicativo que imprime a
+		 * seguinte forma de um losango. Você pode utilizar instruções de saída que
+		 * imprimem um único asterisco (*), um único espaço ou um único caractere de
+		 * nova linha. Maximize sua utilização de repetição (com instruções for
+		 * aninhadas) e minimize o número de instruções de saída.
+		 *
+		 * 
+		 * int aux = 1; int a = 0; for (int i = 0; i < 9; i++) { for (int j = 0; i < 5 ?
+		 * j < 4 - i : j < i - 4; j++) { System.out.print("-"); } if (i >= 1) { for (; i
+		 * < 5 ? a < aux + 2 : a < aux - 2; a++) { System.out.print("*"); } aux = a; a =
+		 * 0; } else { System.out.print("*"); } for (int j = 0; i < 5 ? j < 4 - i : j <
+		 * i - 4; j++) { System.out.print("-"); } System.out.println(); }
+		 *
+		 *
+		 * 5.25 (Programa de impressão de losangos modificado) Modifique o aplicativo
+		 * que você escreveu na Questão 5.24 para ler um número ímpar no intervalo 1 a
+		 * 19 para especificar o número de linhas no losango. Seu programa então deve
+		 * exibir um losango do tamanho apropriado.
+		 *
+		 * int opc = 0; int aux = 1; int a = 0;
+		 * 
+		 * do { System.out.println("Informe um número ímpar entre 1 e 19:"); opc =
+		 * input.nextInt(); } while ((opc % 2) == 0 || opc > 19);
+		 * 
+		 * for (int i = 0; i < opc; i++) { for (int j = 0; i < (opc/2)+1 ? j < (opc/2) -
+		 * i : j < i - (opc/2); j++) { System.out.print("-"); } if (i >= 1) { for (; i <
+		 * (opc/2)+1 ? a < aux + 2 : a < aux - 2; a++) { System.out.print("*"); } aux =
+		 * a; a = 0; } else { System.out.print("*"); }
+		 * 
+		 * for (int j = 0; i < (opc/2)+1 ? j < (opc/2) - i : j < i - (opc/2); j++) {
+		 * System.out.print("-"); } System.out.println(); }
+		 *
+		 *
+		 * 5.26 Uma crítica à instrução break e à instrução continue é que cada uma é
+		 * desestruturada. Na verdade, essas instruções sempre podem ser substituídas
+		 * por instruções estruturadas, embora fazer isso possa ser difícil. Descreva de
+		 * maneira geral como você removeria qualquer instrução break de um loop em um
+		 * programa e a substituiria por alguma equivalente estruturada. [Dica: a
+		 * instrução break sai de um loop do corpo do loop. A outra maneira de sair de
+		 * um loop é falhando no teste de continuação do loop. Considere a possibilidade
+		 * de utilizar no teste de continuação do loop um segundo teste que indica
+		 * “saída prévia por causa de uma condição ‘break’ ”.] Utilize a técnica que
+		 * você desenvolve aqui para remover a instrução break do aplicativo na Figura
+		 * 5.13.
+		 * 
+		 * 
+		 * int cont, aux=0; // variável de controle também utilizada depois que loop
+		 * termina
+		 * 
+		 * for (cont = 1; cont <= 10; cont++) // faz o loop 10 vezes { aux=cont; if
+		 * (cont == 5) { cont+=cont; // termina o loop se a contagem for 5ÿ }
+		 * 
+		 * System.out.printf("%d ", aux); }
+		 * 
+		 * System.out.printf("%nBroke out of loop at count = %d%n", aux);
+		 *
+		 *
+		 * 5.27 O que o seguinte segmento de programa faz?
+		 * 
+		 *
+		 * for (int i = 1; i <= 5; i++) { for (int j = 1; j <= 3; j++) { for (int k = 1;
+		 * k <= 4; k++) System.out.print('*'); System.out.println(); } // fim do for
+		 * interno System.out.println(); }
+		 * 
+		 * 
+		 * for (int count = 1; count <= 10; count++) { // faz o loop 10 vezes
+		 * 
+		 * if (count == 5) { count++; // pula o código restante no corpo do loop se a
+		 * contagem for 5ÿ } System.out.printf("%d ", count); }
+		 * 
+		 * System.out.printf("%nUsed continue to skip printing 5%n"); // fim da classe
+		 * ContinueTest
+		 * 
+		 * 
+		 * 5.29 (A canção “The Twelve Days of Christmas”) Escreva um aplicativo que
+		 * utiliza instruções de repetição e switch para imprimir a canção “The Twelve
+		 * Days of Christmas”. Uma instrução switch deve ser utilizada para imprimir o
+		 * dia (“primeiro”, “segundo” etc.). Uma instrução switch separada deve ser
+		 * utilizada para imprimir o restante de cada verso. Visite o site
+		 * en.wikipedia.org/wiki/ The_Twelve_Days_of_Christmas_(song) para obter a letra
+		 * da música.
+		 * 
+		 * 
+		 * for (int i = 1; i <= 13; i++) { switch (i) { case 1:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 2:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 3:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 4:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 5:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 6:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 7:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 8:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 9:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 10:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 11:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; case 12:
+		 * System.out.println("\nOn the " + i +
+		 * " day of Christmas my true love sent to me"); break; default:
+		 * System.out.println("Fim da canção!"); }
+		 * 
+		 * switch(i) { case 12: System.out.println("Twelve drummers drumming"); case 11:
+		 * System.out.println("Eleven pipers piping"); case 10:
+		 * System.out.println("Ten lords a-leaping,"); case 9:
+		 * System.out.println("Nine ladies dancing,"); case 8:
+		 * System.out.println("Eight maids a-milking,"); case 7:
+		 * System.out.println("Seven swans a-swimming,"); case 6:
+		 * System.out.println("Six geese a-laying,"); case 5:
+		 * System.out.println("Five gold rings"); case 4:
+		 * System.out.println("Four calling birds,"); case 3:
+		 * System.out.println("Three French hens,"); case 2:
+		 * System.out.println("Two turtle doves and"); case 1:
+		 * System.out.println("A partridge in a pear tree."); break; } }
+		 * 
+		 * 
+		 * 5.30 (Classe AutoPolicy modificada) Modifique a classe AutoPolicy na Figura
+		 * 5.11 para validar os códigos de estado de duas letras para os estados do
+		 * nordeste dos EUA. Os códigos são: CT para Connecticut, MA para Massachusetts,
+		 * ME para Maine, NH para New Hampshire, NJ para New Jersey, NY para Nova York,
+		 * PA para Pensilvânia e VT para Vermont. No método AutoPolicy setState use o
+		 * operador lógico OU (||) (Seção 5.9) para criar uma condição composta em uma
+		 * instrução if...else que compara o argumento do método com cada código de duas
+		 * letras. Se o código estiver incorreto, a parte else da instrução if...else
+		 * deve exibir uma mensagem de erro. Nos próximos capítulos, você aprenderá a
+		 * usar o tratamento de exceções para indicar que um método recebeu um valor
+		 * inválido.
+		 * 
+		 * 
+		 * // cria dois objetos AutoPolicy AutoPolicyExec5 policy1 = new
+		 * AutoPolicyExec5(11111111, "Toyota Camry", "NY"); AutoPolicyExec5 policy2 =
+		 * new AutoPolicyExec5(22222222, "Ford Fusion", "ME");
+		 * 
+		 * // exibe se cada apólice está em um estado “sem culpa”
+		 * policyInNoFaultState(policy1); policyInNoFaultState(policy2);
+		 * 
+		 * }
+		 * 
+		 * // método que mostra se um AutoPolicy // está em um estado com seguro de
+		 * automóvel “sem culpa” public static void policyInNoFaultState(AutoPolicyExec5
+		 * policy) { System.out.println("The auto policy:");
+		 * System.out.printf("Account #: %d; Car: %s; State %s %s a no-fault state%n%n",
+		 * policy.getAccountNumber(), policy.getMakeAndModel(), policy.getState(),
+		 * (policy.isNoFaultState() ? "is" : "is not"));
+		 * 
+		 * 
+		 * 5.31 (Perguntas sobre fatos do aquecimento global) A controversa questão do
+		 * aquecimento global foi amplamente divulgada no filme “Uma verdade
+		 * inconveniente,” apresentando o ex-vice-presidente Al Gore. Gore e uma rede de
+		 * cientistas da ONU, o Grupo Intergovernamental sobre Alterações Climáticas,
+		 * dividiu o Prêmio Nobel da Paz de 2007 em reconhecimento aos “seus esforços
+		 * para fomentar e disseminar melhor conhecimento sobre as mudanças climáticas
+		 * feitas pelo homem”. Pesquise on-line os dois lados da questão em relação ao
+		 * aquecimento global (é recomendável pesquisar frases como “global warming
+		 * skeptics” [“céticos do aquecimento global”]). Crie um questionário de
+		 * múltipla escolha com cinco perguntas sobre o aquecimento global, cada uma
+		 * tendo quatro possíveis respostas (numeradas 1 a 4). Seja objetivo e tente
+		 * representar de uma maneira justa ambos os lados da questão. Em seguida,
+		 * escreva um aplicativo que administre o questionário, calcule o número de
+		 * respostas corretas (zero a cinco) e retorne uma mensagem ao usuário. Se o
+		 * usuário responder corretamente cinco perguntas, imprima “Excelente”; se
+		 * responder quatro, imprima “Muito bom”; se responder três ou menos, imprima “É
+		 * o momento de aprimorar seu conhecimento sobre o aquecimento global” e inclua
+		 * uma lista de alguns sites onde você encontrou os fatos.
+		 * 
+		 * QuestionarioAquecimentoGlobal questoes = new QuestionarioAquecimentoGlobal();
+		 * questoes.gerarPerguntas(); questoes.gerarRespostas();
+		 *
+		 *
+		 * 5.32 (Alternativas para o planejamento tributário; o “Imposto justo”) Há
+		 * muitas propostas para tornar a tributação mais justa. Verifique a iniciativa
+		 * FairTax norte-americana em www.fairtax.org. Pesquise como o FairTax proposto
+		 * funciona. Uma sugestão é eliminar impostos de renda e a maioria dos outros
+		 * impostos a favor de um imposto de consumo de 23% sobre todos os produtos e
+		 * serviços que você compra. Alguns oponentes do FairTax questionam o percentual
+		 * de 23% e afirmam que, por causa da maneira como o imposto é calculado, seria
+		 * mais exato dizer que a taxa é 30% — verifique isso cuidadosamente. Escreva um
+		 * programa que peça ao usuário para inserir despesas nas várias categorias de
+		 * despesas que ele tem (por exemplo, moradia, alimentação, vestuário,
+		 * transporte, educação, assistência médica e férias) e então imprima o FairTax
+		 * estimado que a pessoa pagaria.
+		 * 
+		 * ConverterDespesas despesas = new ConverterDespesas();
+		 * despesas.gerarEntradaDados(input); despesas.desejaInserirDados(input);
+		 *
+		 *
+		 * 5.33 (Crescimento da base de usuários do Facebook) De acordo com o
+		 * CNNMoney.com, o Facebook alcançou um bilhão de usuários em outubro de 2012.
+		 * Usando a técnica de crescimento composto que você aprendeu na Figura 5.6 e
+		 * supondo que a base de usuários cresça a uma taxa de 4% ao mês, quantos meses
+		 * levarão para que o Facebook aumente sua base de usuários para 1,5 bilhão?
+		 * Quantos meses serão necessários para que o Facebook expanda sua base de
+		 * usuários para dois bilhões?
+		 *
+		 * CrescimentoFacebook crescimento = new CrescimentoFacebook();
+		 * crescimento.gerarEntradas(input); crescimento.desejaInserirDados(input);
 		 */
 
-		for (int i = 1; i <= 10; i++) {
-			
-			for (int j = 1; j <= i; j++) {
-				System.out.print("*");
-				if (j + 1 > i) {
-					for (int a = 1; a <= 11 - i; a++) {
-						System.out.printf("%s", " ");
-					}
-				}
-			}
-			
-			for (int j = 10 - (i - 1); j >= 1; j--) {
-				System.out.print("*");
-				if (j <= 1) {
-					for (int a = 1; a <= i; a++) {
-						System.out.printf("%s", " ");
-					}
-				}
-			}
-			
-			for (int j = 10 - (i - 1); j >= 1; j--) {
-				if (j == 10-(i-1)) {
-					for (int a = 1; a <= i-1; a++) {	
-						System.out.print(" ");
-					}
-				}
-				System.out.print("*");
-			}
-			
-			for (int j = 10 - (i - 1); j >= 1; j--) {
-				System.out.print(" ");
-				if (j <= 1) {
-					for (int a = 1; a <= i; a++) {
-						System.out.print("*");
-					}
-				}
-			}
-			System.out.println();
-		}
-
+		input.close();
 	}
 
 	/*
