@@ -10,7 +10,7 @@ public class RetanguloMain {
 
 		Scanner inp = new Scanner(System.in);
 		Exercicio01 retangulo = new Exercicio01();
-		double largura, altura, area, perimetro;
+		double largura, altura;
 
 		System.out.println("Informe a largura e altura de um retângulo:");
 		largura = inp.nextDouble();
@@ -20,7 +20,7 @@ public class RetanguloMain {
 		retangulo.setAltura(altura);
 
 		System.out.printf("Área: %.2f %nPerimetro: %.2f %nDiagonal: %.2f", retangulo.area(), retangulo.perimetro(), retangulo.diagonal());
-
+		inp.close();
 	}
 
 }

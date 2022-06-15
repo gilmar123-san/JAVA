@@ -29,7 +29,7 @@ public class CalculaSalarioFuncionario {
 		System.out.println("Informe a porcentagem de aumento do salário:");
 		double aumento = in.nextDouble();
 		funcionario.aumentarSalario(aumento);
-		
+		in.close();
 	}
 
 }
