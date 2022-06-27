@@ -22,11 +22,11 @@ public class Condicoes {
 		valor01 = (valor01 * valor02) + 9 - (77/7); 
 		
 		if(valor01 == valor02) {
-			System.out.printf("%d é igual %d%n",valor01,valor02);
+			System.out.printf("%d ï¿½ igual %d%n",valor01,valor02);
 		}else if(valor01 != valor02) {
-			System.out.printf("%d é diferente %d%n",valor01,valor02);
+			System.out.printf("%d ï¿½ diferente %d%n",valor01,valor02);
 		}
-		
+		entrada.close();
 	}	
 
 }

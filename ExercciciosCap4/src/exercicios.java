@@ -9,7 +9,7 @@ public class exercicios {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		/*4.3 Escreva quatro instruções Java diferentes que adicionam 1 à variável de inteiro x.
+		/*4.3 Escreva quatro instruï¿½ï¿½es Java diferentes que adicionam 1 ï¿½ variï¿½vel de inteiro x.
 		
 		int X=0;
 		
@@ -24,12 +24,12 @@ public class exercicios {
 		System.out.printf("X: %d %n%n", X);*/
 		
 		
-		/*4.4 Escreva instruções Java para realizar cada uma das seguintes tarefas:
-			a) Utilize uma instrução para atribuir a soma de x e y a z, em seguida, incremente x por 1.
-			b) Teste se a variável contador é maior do que 10. Se for, imprima "Contador é maior que 10".
-			c) Utilize uma instrução para decrementar a variável x por 1, então subtraia-o da variável total e armazene o resultado na variável
+		/*4.4 Escreva instruï¿½ï¿½es Java para realizar cada uma das seguintes tarefas:
+			a) Utilize uma instruï¿½ï¿½o para atribuir a soma de x e y a z, em seguida, incremente x por 1.
+			b) Teste se a variï¿½vel contador ï¿½ maior do que 10. Se for, imprima "Contador ï¿½ maior que 10".
+			c) Utilize uma instruï¿½ï¿½o para decrementar a variï¿½vel x por 1, entï¿½o subtraia-o da variï¿½vel total e armazene o resultado na variï¿½vel
 			total.
-			d) Calcule o resto após q ser dividido por divisor e atribua o resultado a q. Escreva essa instrução de duas maneiras diferentes.
+			d) Calcule o resto apï¿½s q ser dividido por divisor e atribua o resultado a q. Escreva essa instruï¿½ï¿½o de duas maneiras diferentes.
 		
 		//A z = x++ + y;
 		
@@ -37,7 +37,7 @@ public class exercicios {
 		
 		int x, y, z;
 		
-		System.out.println("Informe os valores de x, y e z na sequência:");
+		System.out.println("Informe os valores de x, y e z na sequï¿½ncia:");
 		x = entrada.nextInt();
 		y= entrada.nextInt();
 		z= entrada.nextInt();
@@ -45,7 +45,7 @@ public class exercicios {
 		z = x+y;
 		x++;
 		
-		System.out.printf("O valor de x é: %d %n O valor de z:%d %n%n ", x, z);
+		System.out.printf("O valor de x ï¿½: %d %n O valor de z:%d %n%n ", x, z);
 		
 		//B
 		
@@ -57,7 +57,7 @@ public class exercicios {
 		contador = entrada.nextInt();
 		
 		if(contador>10) {
-			System.out.println("Contador é maior que 10 \n");
+			System.out.println("Contador ï¿½ maior que 10 \n");
 		}
 		
 		
@@ -82,7 +82,7 @@ public class exercicios {
 		int divisor;
 		int q;
 		
-		System.out.println("Informe os valores de q e seu divisor na sequência:");
+		System.out.println("Informe os valores de q e seu divisor na sequï¿½ncia:");
 		q = entrada.nextInt();
 		divisor = entrada.nextInt();
 
@@ -92,29 +92,29 @@ public class exercicios {
 		
 		System.out.println("Resto: "+q);*/
 		
-		/*4.5 Escreva uma instrução Java para realizar cada uma das seguintes tarefas:
+		/*4.5 Escreva uma instruï¿½ï¿½o Java para realizar cada uma das seguintes tarefas:
 		
-		a) Declarar variáveis sum do tipo int e inicialize-as como 0.
+		a) Declarar variï¿½veis sum do tipo int e inicialize-as como 0.
 		
 		int sum = 0;
 		
-		b) Declarar variáveis x do tipo int e inicialize-as como 0.
+		b) Declarar variï¿½veis x do tipo int e inicialize-as como 0.
 		
 		int x = 0;
 		
-		c) Adicione a variável x à variável sum, e atribua o resultado à variável sum.
+		c) Adicione a variï¿½vel x ï¿½ variï¿½vel sum, e atribua o resultado ï¿½ variï¿½vel sum.
 		
 		System.out.println("Informe o valor de x:");
 		x = entrada.nextInt();
 		
 		sum += x;
 		
-		d) Imprima "A soma é: " seguido pelo valor da variável sum.
+		d) Imprima "A soma ï¿½: " seguido pelo valor da variï¿½vel sum.
 		
-		System.out.println("A soma é: "+sum);*/
+		System.out.println("A soma ï¿½: "+sum);*/
 		
-		/*4.6 Combine as instruções escritas no Exercício 4.5 em um aplicativo Java que calcula e imprime a soma dos inteiros de 1 a 10. Utilize a instrução
-		while para fazer loop pelas instruções de cálculo e incremento. O loop deve terminar quando o valor de x tornar-se 11.
+		/*4.6 Combine as instruï¿½ï¿½es escritas no Exercï¿½cio 4.5 em um aplicativo Java que calcula e imprime a soma dos inteiros de 1 a 10. Utilize a instruï¿½ï¿½o
+		while para fazer loop pelas instruï¿½ï¿½es de cï¿½lculo e incremento. O loop deve terminar quando o valor de x tornar-se 11.
 		
 		int sum = 0;
 		int x = 0;
@@ -126,12 +126,12 @@ public class exercicios {
 			x++;
 		}
 		
-		System.out.println("A soma é: "+sum);*/
+		System.out.println("A soma ï¿½: "+sum);*/
 		
-		/*4.7 Determine o valor das variáveis na instrução product *= x++; depois que o cálculo é realizado. Suponha que todas as variáveis sejam
+		/*4.7 Determine o valor das variï¿½veis na instruï¿½ï¿½o product *= x++; depois que o cï¿½lculo ï¿½ realizado. Suponha que todas as variï¿½veis sejam
 		do tipo int e inicialmente tenham o valor 5. Product = 25, X = 6*/
 		
-		/*4.8 Identifique e corrija os erros em cada um dos seguintes conjuntos de código:
+		/*4.8 Identifique e corrija os erros em cada um dos seguintes conjuntos de cï¿½digo:
 		
 		//a)
 		int product = 1;
@@ -146,7 +146,7 @@ public class exercicios {
 			
 			}
 			
-		System.out.println("O valor de product é: "+product);
+		System.out.println("O valor de product ï¿½: "+product);
 		
 		//b) 
 		
@@ -158,7 +158,7 @@ public class exercicios {
 			System.out.println("Man");
 		}*/
 		
-		/*4.9 O que há de errado com a instrução while a seguir?
+		/*4.9 O que hï¿½ de errado com a instruï¿½ï¿½o while a seguir?
 		
 		int z = 0;
 		int sum = 0;
@@ -182,19 +182,19 @@ public class exercicios {
 		
 		System.out.printf("Total is %d%n", total);*/
 		
-		/*Para os exercícios de 4.17 a 4.20, execute cada um dos seguintes passos:
-			a) Leia a declaração do problema.
-			b) Formule o algoritmo utilizando pseudocódigo e refinamento passo a passo de cima para baixo (top-down stepwise).
+		/*Para os exercï¿½cios de 4.17 a 4.20, execute cada um dos seguintes passos:
+			a) Leia a declaraï¿½ï¿½o do problema.
+			b) Formule o algoritmo utilizando pseudocï¿½digo e refinamento passo a passo de cima para baixo (top-down stepwise).
 			c) Escreva um programa Java.
 			d) Teste, depure e execute o programa Java.
-			e) Processe três conjuntos completos de dados.
+			e) Processe trï¿½s conjuntos completos de dados.
 			
-			4.17 (Quilometragem de combustível) Os motoristas se preocupam com a quilometragem obtida por seus automóveis. Um motorista monitorou
-			várias viagens registrando a quilometragem dirigida e a quantidade de combustível em litros utilizados para cada tanque cheio.
-			Desenvolva um aplicativo Java que receba como entrada os quilômetros dirigidos e os litros de gasolina consumidos (ambos como inteiros)
-			para cada viagem. O programa deve calcular e exibir o consumo em quilômetros/litro para cada viagem e imprimir a quilometragem
-			total e a soma total de litros de combustível consumidos até esse ponto para todas as viagens. Todos os cálculos de média devem produzir
-			resultados de ponto flutuante. Utilize classe Scanner e repetição controlada por sentinela para obter os dados do usuário.
+			4.17 (Quilometragem de combustï¿½vel) Os motoristas se preocupam com a quilometragem obtida por seus automï¿½veis. Um motorista monitorou
+			vï¿½rias viagens registrando a quilometragem dirigida e a quantidade de combustï¿½vel em litros utilizados para cada tanque cheio.
+			Desenvolva um aplicativo Java que receba como entrada os quilï¿½metros dirigidos e os litros de gasolina consumidos (ambos como inteiros)
+			para cada viagem. O programa deve calcular e exibir o consumo em quilï¿½metros/litro para cada viagem e imprimir a quilometragem
+			total e a soma total de litros de combustï¿½vel consumidos atï¿½ esse ponto para todas as viagens. Todos os cï¿½lculos de mï¿½dia devem produzir
+			resultados de ponto flutuante. Utilize classe Scanner e repetiï¿½ï¿½o controlada por sentinela para obter os dados do usuï¿½rio.
 			
 			problema geral
 			
@@ -202,33 +202,33 @@ public class exercicios {
 			
 			topo
 			
-			1 - inicializa as varíaveis
+			1 - inicializa as varï¿½aveis
 			
 			2 - insira a quantidade de litro e kilometros
 			
-			3 - calcule, exiba o consumo em kilometros/litro por viagem e imprima a kilometragem total e a soma toal de litros de combustivel consumidos até esse ponto para as viagens
+			3 - calcule, exiba o consumo em kilometros/litro por viagem e imprima a kilometragem total e a soma toal de litros de combustivel consumidos atï¿½ esse ponto para as viagens
 			
 			
 			Refinamento:
 			
-			1 - inicializa as varíaveis
+			1 - inicializa as varï¿½aveis
 			
 				inicializa litros como zero
 				inicializa kilometros como zero
 				
 			2 - insira a quantidade de litro e kilometros
 			
-				Recebe os valores de entrada do usuário para litros e kilometros
+				Recebe os valores de entrada do usuï¿½rio para litros e kilometros
 				
 			
-			3 - calcule, exiba o consumo em kilometros/litro por viagem e imprima a kilometragem total e a soma total de litros de combustivel consumidos até esse ponto para as viagens
+			3 - calcule, exiba o consumo em kilometros/litro por viagem e imprima a kilometragem total e a soma total de litros de combustivel consumidos atï¿½ esse ponto para as viagens
 			
-				cria uma variável divisao do tipo flutuante
+				cria uma variï¿½vel divisao do tipo flutuante
 				
-				enquanto sentinela for diferente de -1 faça
+				enquanto sentinela for diferente de -1 faï¿½a
 							
 				
-				divide kilometros por litros e atribui a variável divisao
+				divide kilometros por litros e atribui a variï¿½vel divisao
 				
 				mostra na tela o gasto de litros por kilometros
 				
@@ -238,7 +238,7 @@ public class exercicios {
 			
 				
 		
-		//usando valor de sentinela e não controle por contador
+		//usando valor de sentinela e nï¿½o controle por contador
 		
 		int sentinela = 0;
 		int kmTotal=0;
@@ -267,7 +267,7 @@ public class exercicios {
 				
 				while( sentinela!=1 && sentinela!=-1 ) {
 					
-					JOptionPane.showMessageDialog(null, "Valor da operação inválido");
+					JOptionPane.showMessageDialog(null, "Valor da operaï¿½ï¿½o invï¿½lido");
 					
 					String valor_de_remate01 = JOptionPane.showInputDialog("Deseja calcular os gastos de outra viagem? (1 (S) / -1 (N))");
 					sentinela = Integer.parseInt(valor_de_remate01);
@@ -283,30 +283,30 @@ public class exercicios {
 		JOptionPane.showMessageDialog(null,retornoFinal);
 		
 	
-		4.18 (Calculador de limite de crédito) Desenvolva um aplicativo Java que determina se um cliente de uma loja de departamentos excedeu o
-		limite de crédito em uma conta-corrente. Para cada cliente, os seguintes dados estão disponíveis:
-		a) Número de conta.
-		b) Saldo no início do mês.
-		c) Total de todos os itens cobrados desse cliente no mês.
-		d) Total de créditos aplicados ao cliente no mês.
-		e) Limite de crédito autorizado.
-		O programa deve inserir todos esses dados como inteiros, calcular o novo saldo (= saldo inicial + despesas – créditos), exibir o novo saldo e
-		determinar se o novo saldo excede ao limite de crédito do cliente. Para aqueles clientes cujo limite de crédito foi excedido, o programa deve
-		exibir a mensagem "Limite de crédito excedido".
+		4.18 (Calculador de limite de crï¿½dito) Desenvolva um aplicativo Java que determina se um cliente de uma loja de departamentos excedeu o
+		limite de crï¿½dito em uma conta-corrente. Para cada cliente, os seguintes dados estï¿½o disponï¿½veis:
+		a) Nï¿½mero de conta.
+		b) Saldo no inï¿½cio do mï¿½s.
+		c) Total de todos os itens cobrados desse cliente no mï¿½s.
+		d) Total de crï¿½ditos aplicados ao cliente no mï¿½s.
+		e) Limite de crï¿½dito autorizado.
+		O programa deve inserir todos esses dados como inteiros, calcular o novo saldo (= saldo inicial + despesas ï¿½ crï¿½ditos), exibir o novo saldo e
+		determinar se o novo saldo excede ao limite de crï¿½dito do cliente. Para aqueles clientes cujo limite de crï¿½dito foi excedido, o programa deve
+		exibir a mensagem "Limite de crï¿½dito excedido".
 		
-		Calculador de limite de crédito
+		Calculador de limite de crï¿½dito
 		
 		topo:
 		
-			1 - inicialize as variáveis;
+			1 - inicialize as variï¿½veis;
 			
-			2 - informe número da conta, Saldo no início do mês, total de todos os itens cobrados deste cliente, Total de créditos aplicados ao cliente no mês, Limite de crédito autorizado;
+			2 - informe nï¿½mero da conta, Saldo no inï¿½cio do mï¿½s, total de todos os itens cobrados deste cliente, Total de crï¿½ditos aplicados ao cliente no mï¿½s, Limite de crï¿½dito autorizado;
 			
-			3 - calcule o novo saldo (saldo inicial + despesas - crédito), exibir o novo saldo e determinar se esse novo saldo excede o valor do crétido;
+			3 - calcule o novo saldo (saldo inicial + despesas - crï¿½dito), exibir o novo saldo e determinar se esse novo saldo excede o valor do crï¿½tido;
 		
 		Refinamento:
 			
-			1 - inicialize as variáveis;
+			1 - inicialize as variï¿½veis;
 				
 				inicializa saldo;
 				inicializa conta;
@@ -314,19 +314,19 @@ public class exercicios {
 				inicializa totCredto
 				inicializa limitCredto;
 				
-			2 - informe número da conta, Saldo no início do mês, total de todos os itens cobrados deste cliente, Total de créditos aplicados ao cliente no mês, Limite de crédito autorizado;
+			2 - informe nï¿½mero da conta, Saldo no inï¿½cio do mï¿½s, total de todos os itens cobrados deste cliente, Total de crï¿½ditos aplicados ao cliente no mï¿½s, Limite de crï¿½dito autorizado;
 			
-				Recebe saldo do usuário;
-				Recebe n° conta;
+				Recebe saldo do usuï¿½rio;
+				Recebe nï¿½ conta;
 				Recebe valor do totItens;
 				Recebe valor do totCredto;
 				Recebe valor do limitCredto;
 				
-			3 - calcule o novo saldo (saldo inicial + despesas - crédito), exibir o novo saldo e determinar se esse novo saldo excede o valor do crétido;
+			3 - calcule o novo saldo (saldo inicial + despesas - crï¿½dito), exibir o novo saldo e determinar se esse novo saldo excede o valor do crï¿½tido;
 				
-				Calcular novo saldo = saldo inicial + despesas - crédito;
+				Calcular novo saldo = saldo inicial + despesas - crï¿½dito;
 				exibe o novo saldo;
-				determinar se esse novo saldo excede o valor do crétido
+				determinar se esse novo saldo excede o valor do crï¿½tido
 			
 			
 		int saldo = 0;
@@ -335,7 +335,7 @@ public class exercicios {
 		int totCredto = 0;
 		int limitCredto = 0;
 		
-			String stringConta = JOptionPane.showInputDialog("Informe o N° da conta:");
+			String stringConta = JOptionPane.showInputDialog("Informe o Nï¿½ da conta:");
 				conta = Integer.parseInt(stringConta);
 			
 			String stringSaldo = JOptionPane.showInputDialog("Informe o saldo da conta:");
@@ -344,43 +344,43 @@ public class exercicios {
 			String stringTotItens = JOptionPane.showInputDialog("Informe as despesas cliente:");
 				totItens = Integer.parseInt(stringTotItens);
 			
-			String stringTotCredto = JOptionPane.showInputDialog("Informe o crédito total aplicado ao cliente:");
+			String stringTotCredto = JOptionPane.showInputDialog("Informe o crï¿½dito total aplicado ao cliente:");
 				totCredto = Integer.parseInt(stringTotCredto);
 			
-			String stringLimitCredto = JOptionPane.showInputDialog("Informe o limite de crédito aprovado para o cliente:");
+			String stringLimitCredto = JOptionPane.showInputDialog("Informe o limite de crï¿½dito aprovado para o cliente:");
 				limitCredto = Integer.parseInt(stringLimitCredto);
 		
 			saldo = (saldo+totItens)-totCredto;
 			
-			String retorno = String.format("Saldo restante:%d %n%s", saldo, saldo < limitCredto?"O saldo é maior que o limite de crédito":"O saldo é menor que o limite de crédito");
+			String retorno = String.format("Saldo restante:%d %n%s", saldo, saldo < limitCredto?"O saldo ï¿½ maior que o limite de crï¿½dito":"O saldo ï¿½ menor que o limite de crï¿½dito");
 			
 			JOptionPane.showMessageDialog(null, retorno);
 			
 		
-		4.19 (Calculador de comissão de vendas) Uma grande empresa paga seu pessoal de vendas com base em comissões. O pessoal de vendas
-		recebe R$ 200 por semana mais 9% de suas vendas brutas durante esse período. Por exemplo, um vendedor que realiza um total de vendas
+		4.19 (Calculador de comissï¿½o de vendas) Uma grande empresa paga seu pessoal de vendas com base em comissï¿½es. O pessoal de vendas
+		recebe R$ 200 por semana mais 9% de suas vendas brutas durante esse perï¿½odo. Por exemplo, um vendedor que realiza um total de vendas
 		de mercadorias de R$ 5.000 em uma semana recebe R$ 200 mais 9% de R$ 5.000, um total de R$ 650. Foi-lhe fornecida uma lista dos itens
-		vendidos por cada vendedor. Os valores desses itens são como segue:
+		vendidos por cada vendedor. Os valores desses itens sï¿½o como segue:
 		Item Value
 		1 239.99
 		2 129.75
 		3 99.95
 		4 350.89
-		Desenvolva um aplicativo Java que recebe entrada de itens vendidos por um vendedor durante a última semana e calcula e exibe os rendimentos
-		do vendedor. Não existe nenhum limite para o número de itens que pode ser vendido.
+		Desenvolva um aplicativo Java que recebe entrada de itens vendidos por um vendedor durante a ï¿½ltima semana e calcula e exibe os rendimentos
+		do vendedor. Nï¿½o existe nenhum limite para o nï¿½mero de itens que pode ser vendido.
 		
 		
-		Calculador de comissão de vendas
+		Calculador de comissï¿½o de vendas
 		
 		Topo:
 		
-		1 - inicializa as variáveis
+		1 - inicializa as variï¿½veis
 		2 - Recebe os valores dos produtos vendidos
-		3 - faz os calculos necessários
+		3 - faz os calculos necessï¿½rios
 		
 		Refinamento:
 			
-		1 - inicializa as variáveis
+		1 - inicializa as variï¿½veis
 			
 			inicializa salario;
 		    inicializa item;
@@ -389,7 +389,7 @@ public class exercicios {
 			
 			recebe salario;
 		
-		3 - faz os calculos necessários
+		3 - faz os calculos necessï¿½rios
 		
 		
 			soma item mais 1;
@@ -418,40 +418,40 @@ public class exercicios {
 			JOptionPane.showMessageDialog(null, retorno);
 			
 			
-			4.20 (Calculador de salários) Desenvolva um aplicativo Java que determina o salário bruto de cada um de três empregados. A empresa paga
-			as horas normais pelas primeiras 40 horas trabalhadas por cada funcionário e 50% a mais por todas as horas trabalhadas além das 40
-			horas. Você recebe uma lista de empregados, o número de horas trabalhadas por eles na semana passada e o salário-hora de cada um. Seu
-			programa deve aceitar a entrada dessas informações para cada empregado e, então, determinar e exibir o salário bruto do empregado.
+			4.20 (Calculador de salï¿½rios) Desenvolva um aplicativo Java que determina o salï¿½rio bruto de cada um de trï¿½s empregados. A empresa paga
+			as horas normais pelas primeiras 40 horas trabalhadas por cada funcionï¿½rio e 50% a mais por todas as horas trabalhadas alï¿½m das 40
+			horas. Vocï¿½ recebe uma lista de empregados, o nï¿½mero de horas trabalhadas por eles na semana passada e o salï¿½rio-hora de cada um. Seu
+			programa deve aceitar a entrada dessas informaï¿½ï¿½es para cada empregado e, entï¿½o, determinar e exibir o salï¿½rio bruto do empregado.
 			Utilize a classe Scanner para inserir os dados.
 			
-			Calculador de salários
+			Calculador de salï¿½rios
 			
 			topo:
 				
-				1 - inicializa variáveis
-				2 - Recebe o valor das variáveis
-				3 - calcular salário
+				1 - inicializa variï¿½veis
+				2 - Recebe o valor das variï¿½veis
+				3 - calcular salï¿½rio
 			
 			Refinamento:
 				
-				1 - inicializa variáveis
+				1 - inicializa variï¿½veis
 					
 					inicializa nome;
 					inicializa horasTrabalhadas;
 					inicializa salarioHora;
 					inicializa contador; 
 					
-				2 - Recebe o valor das variáveis
+				2 - Recebe o valor das variï¿½veis
 					
 					Recebe nome;
 					Recebe horasTrabalhadas;
 					Recebe salarioHora;
 					Recebe contador;
 					
-				3 - calcular salário
+				3 - calcular salï¿½rio
 				
-					verifica se horasTrabalhadas é maior que 40
-					se verdade calcula quantas horas mais e adiciona 50% ao sálario
+					verifica se horasTrabalhadas ï¿½ maior que 40
+					se verdade calcula quantas horas mais e adiciona 50% ao sï¿½lario
 					deterima salario
 					exibe salario
 					
@@ -469,7 +469,7 @@ public class exercicios {
 					String setHorasTrabalhadas = JOptionPane.showInputDialog("Horas trabalhadas:");
 						horasTrabalhadas = Integer.parseInt(setHorasTrabalhadas);
 					
-					String setSalarioHora = JOptionPane.showInputDialog("Salário hora trabalhada:");
+					String setSalarioHora = JOptionPane.showInputDialog("Salï¿½rio hora trabalhada:");
 						salarioHora = Integer.parseInt(setSalarioHora);
 					
 							if(horasTrabalhadas>40) {
@@ -482,43 +482,43 @@ public class exercicios {
 								
 							}					
 							
-							String retorno = String.format("Funcionário: %s%nSalário bruto: %d", nome, salarioBruto);
+							String retorno = String.format("Funcionï¿½rio: %s%nSalï¿½rio bruto: %d", nome, salarioBruto);
 							
 							JOptionPane.showMessageDialog(null, retorno);
 				
 				}
 					
 					
-				4.21 (Localize o maior número) O processo de localizar o maior valor é muito utilizado em aplicativos de computador. Por exemplo, um
-				programa que determina o vencedor de uma competição de vendas inseriria o número de unidades vendidas por cada vendedor. O vendedor
-				que vende mais unidades ganha a competição. Escreva um programa em pseudocódigo e, então, um aplicativo Java que aceita como entrada
-				uma série de 10 inteiros e determina e imprime o maior dos inteiros. Seu programa deve utilizar pelo menos as três variáveis a seguir:
-				a) counter: um contador para contar até 10 (isto é, monitorar quantos números foram inseridos e determinar quando todos os 10 números
+				4.21 (Localize o maior nï¿½mero) O processo de localizar o maior valor ï¿½ muito utilizado em aplicativos de computador. Por exemplo, um
+				programa que determina o vencedor de uma competiï¿½ï¿½o de vendas inseriria o nï¿½mero de unidades vendidas por cada vendedor. O vendedor
+				que vende mais unidades ganha a competiï¿½ï¿½o. Escreva um programa em pseudocï¿½digo e, entï¿½o, um aplicativo Java que aceita como entrada
+				uma sï¿½rie de 10 inteiros e determina e imprime o maior dos inteiros. Seu programa deve utilizar pelo menos as trï¿½s variï¿½veis a seguir:
+				a) counter: um contador para contar atï¿½ 10 (isto ï¿½, monitorar quantos nï¿½meros foram inseridos e determinar quando todos os 10 nï¿½meros
 				foram processados).
-				b) number: o inteiro mais recentemente inserido pelo usuário.
-				c) largest: o maior número encontrado até agora.
+				b) number: o inteiro mais recentemente inserido pelo usuï¿½rio.
+				c) largest: o maior nï¿½mero encontrado atï¿½ agora.
 		
-			Localize o maior número
+			Localize o maior nï¿½mero
 				
 				Topo:
 					
-				1 - inicializa as variáveis
-				2 - recebe os valores da variáveis
-				3 - validar o maior número;
+				1 - inicializa as variï¿½veis
+				2 - recebe os valores da variï¿½veis
+				3 - validar o maior nï¿½mero;
 				
 				Refinamento:
 					
-				1 - inicializa as variáveis
+				1 - inicializa as variï¿½veis
 					
 					inicializa contador;
 					inicializa numero;
 					inicializa maiorValor;
 				
-				2 - recebe os valores da variáveis
+				2 - recebe os valores da variï¿½veis
 					
-					recebe número;
+					recebe nï¿½mero;
 				
-				3 - validar o maior número;
+				3 - validar o maior nï¿½mero;
 		
 				int contador = 1;
 				int numero = 0;
@@ -527,21 +527,21 @@ public class exercicios {
 				
 				while(contador<=10) {
 					
-					String setNumero = JOptionPane.showInputDialog("Informe o "+contador+"º número:");
+					String setNumero = JOptionPane.showInputDialog("Informe o "+contador+"ï¿½ nï¿½mero:");
 						numero = Integer.parseInt(setNumero);
 							if(numero > maiorValor) {
 								
-								JOptionPane.showMessageDialog(null, numero+" é maior que "+ maiorValor);
+								JOptionPane.showMessageDialog(null, numero+" ï¿½ maior que "+ maiorValor);
 									maiorValor = numero;
 								
 							}else {
-								JOptionPane.showMessageDialog(null, numero+" é menor que "+ maiorValor);
+								JOptionPane.showMessageDialog(null, numero+" ï¿½ menor que "+ maiorValor);
 							}
 							contador++;
 							
 				}
 				
-				4.22 (Saída no formato de tabela) Escreva um aplicativo Java que utiliza um loop para imprimir a seguinte tabela de valores:
+				4.22 (Saï¿½da no formato de tabela) Escreva um aplicativo Java que utiliza um loop para imprimir a seguinte tabela de valores:
 						N 10*N 100*N 1000*N
 						1 10 	100  1000
 						2 20 	200  2000
@@ -559,8 +559,8 @@ public class exercicios {
 					contador++;
 				}
 		
-			4.23 (Encontre os dois números maiores) Utilizando uma abordagem semelhante àquela do Exercício 4.21, encontre os dois maiores valores
-			entre os 10 valores inseridos. [Observação: você só pode inserir cada número uma vez.]		
+			4.23 (Encontre os dois nï¿½meros maiores) Utilizando uma abordagem semelhante ï¿½quela do Exercï¿½cio 4.21, encontre os dois maiores valores
+			entre os 10 valores inseridos. [Observaï¿½ï¿½o: vocï¿½ sï¿½ pode inserir cada nï¿½mero uma vez.]		
 			
 			int contador = 1;
 			int numero = 0;
@@ -569,7 +569,7 @@ public class exercicios {
 			
 			while(contador<=10) {
 				
-				String setNumero = JOptionPane.showInputDialog("Informe o "+contador+"º número:");
+				String setNumero = JOptionPane.showInputDialog("Informe o "+contador+"ï¿½ nï¿½mero:");
 					numero = Integer.parseInt(setNumero);
 					
 						if(numero >= maiorValor) {
@@ -577,33 +577,33 @@ public class exercicios {
 							
 							if(maiorValor > cache) {
 								
-								JOptionPane.showMessageDialog(null, numero+" e "+ maiorValor+" são os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");														
+								JOptionPane.showMessageDialog(null, numero+" e "+ maiorValor+" sï¿½o os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");														
 															
 							}else if(cache > maiorValor){
 								
-								JOptionPane.showMessageDialog(null, numero+" e "+ cache+" são os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");
+								JOptionPane.showMessageDialog(null, numero+" e "+ cache+" sï¿½o os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");
 							}
 								cache = maiorValor;
 								maiorValor = numero;
 							
 						}else if( maiorValor > numero && numero > cache){
 							
-							JOptionPane.showMessageDialog(null, maiorValor+" e "+numero+" são os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");
+							JOptionPane.showMessageDialog(null, maiorValor+" e "+numero+" sï¿½o os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");
 							
 						
 						}else {
 							
-							JOptionPane.showMessageDialog(null, maiorValor+" e "+cache+" são os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");
+							JOptionPane.showMessageDialog(null, maiorValor+" e "+cache+" sï¿½o os maiores entre "+"("+numero+", "+ maiorValor+", "+ cache+"...)");
 							
 						}
 						
 						contador++;
 			}
 			
-			4.24 (Validando entrada de usuário) Modifique o programa na Figura 4.12 para validar suas entradas. Para qualquer entrada, se o valor
-			entrado for diferente de 1 ou 2, continue o loop até o usuário inserir um valor correto.
+			4.24 (Validando entrada de usuï¿½rio) Modifique o programa na Figura 4.12 para validar suas entradas. Para qualquer entrada, se o valor
+			entrado for diferente de 1 ou 2, continue o loop atï¿½ o usuï¿½rio inserir um valor correto.
 		
-		 //inicializando variáveis nas declarações
+		 //inicializando variï¿½veis nas declaraï¿½ï¿½es
 		
 		 int aprovado = 0;
 		 int reprovado = 0;
@@ -624,14 +624,14 @@ public class exercicios {
 									
 					while(resultado!=1 && resultado!=2) {
 							 
-							 // solicita ao usuário uma entrada e obtém valor fornecido pelo usuário
+							 // solicita ao usuï¿½rio uma entrada e obtï¿½m valor fornecido pelo usuï¿½rio
 						String opcao1 = JOptionPane.showInputDialog("Insira o resultado (1 = aprovado, 2 = reprovado):");
 						 resultado = Integer.parseInt(opcao1);
 						 
 					 }
 				}
 			
-				 // if...else está aninhado na instrução while
+				 // if...else estï¿½ aninhado na instruï¿½ï¿½o while
 				 if (resultado == 1) {
 					 
 					 aprovado += 1;
@@ -648,12 +648,12 @@ public class exercicios {
 		 }
 	  
 
-		  // fase de término; prepara e exibe os resultados
+		  // fase de tï¿½rmino; prepara e exibe os resultados
 		 System.out.printf("%nAprovado: %d%nFalha: %d%n", aprovado, reprovado);
 
-		  // determina se mais de 8 alunos foram aprovadosÿ
+		  // determina se mais de 8 alunos foram aprovadosï¿½
 		  if (aprovado > 8) {
-			  System.out.println("Bônus para instructor!");
+			  System.out.println("Bï¿½nus para instructor!");
 		  }
 		  
 		
@@ -689,11 +689,11 @@ public class exercicios {
 		 
 		 }
 		
-		4.27 (Problema do else oscilante) Determine a saída para cada um dos conjuntos dados de código quando x é 9 e y é 11 e quando x é 11
-		e y é 9. O compilador ignora o recuo em um programa Java. Da mesma forma, o compilador Java sempre associa um else com o if imediatamente
-		precedente a menos que instruído a fazer de outro modo pela colocação de chaves ({}). À primeira vista, o programador pode
-		não ter certeza de qual if um else particular corresponde — essa situação é conhecida como "problema do else oscilante". Eliminamos
-		o recuo do seguinte código para tornar o problema mais desafiador. [Dica: aplique as convenções de recuo que você aprendeu.]*/
+		4.27 (Problema do else oscilante) Determine a saï¿½da para cada um dos conjuntos dados de cï¿½digo quando x ï¿½ 9 e y ï¿½ 11 e quando x ï¿½ 11
+		e y ï¿½ 9. O compilador ignora o recuo em um programa Java. Da mesma forma, o compilador Java sempre associa um else com o if imediatamente
+		precedente a menos que instruï¿½do a fazer de outro modo pela colocaï¿½ï¿½o de chaves ({}). ï¿½ primeira vista, o programador pode
+		nï¿½o ter certeza de qual if um else particular corresponde ï¿½ essa situaï¿½ï¿½o ï¿½ conhecida como "problema do else oscilante". Eliminamos
+		o recuo do seguinte cï¿½digo para tornar o problema mais desafiador. [Dica: aplique as convenï¿½ï¿½es de recuo que vocï¿½ aprendeu.]*/
 		//a)
 		/*int x1 = 11;
 		int y1 = 9;
@@ -715,10 +715,10 @@ public class exercicios {
 				System.out.println("#####");
 				System.out.println("$$$$$");
 		}
-		4.28 (Outro problema do else oscilante) Modifique o código dado para produzir a saída mostrada em cada parte do problema. Utilize
-		técnicas de recuo adequadas. Não faça nenhuma alteração além de inserir chaves e alterar o recuo do código. O compilador ignora recuo
-		em um programa Java. Eliminamos o recuo do código fornecido para tornar o problema mais desafiador. [Observação: é possível que não
-		seja necessária nenhuma modificação para algumas das partes.]
+		4.28 (Outro problema do else oscilante) Modifique o cï¿½digo dado para produzir a saï¿½da mostrada em cada parte do problema. Utilize
+		tï¿½cnicas de recuo adequadas. Nï¿½o faï¿½a nenhuma alteraï¿½ï¿½o alï¿½m de inserir chaves e alterar o recuo do cï¿½digo. O compilador ignora recuo
+		em um programa Java. Eliminamos o recuo do cï¿½digo fornecido para tornar o problema mais desafiador. [Observaï¿½ï¿½o: ï¿½ possï¿½vel que nï¿½o
+		seja necessï¿½ria nenhuma modificaï¿½ï¿½o para algumas das partes.]
 		
 		if (y == 8)
 			if (x == 5)
@@ -728,7 +728,7 @@ public class exercicios {
 		System.out.println("$$$$$");
 		System.out.println("&&&&&");
 		
-		a) Supondo que x = 5 e y = 8, a seguinte saída é produzida:
+		a) Supondo que x = 5 e y = 8, a seguinte saï¿½da ï¿½ produzida:
 		@@@@@
 		$$$$$
 		&&&&&
@@ -744,7 +744,7 @@ public class exercicios {
 		System.out.println("$$$$$");
 		System.out.println("&&&&&");
 		
-		b) Supondo que x = 5 e y = 8, a seguinte saída é produzida:
+		b) Supondo que x = 5 e y = 8, a seguinte saï¿½da ï¿½ produzida:
 		@@@@@
 		
 		int x = 5;
@@ -760,7 +760,7 @@ public class exercicios {
 			}
 		}
 		
-		c) Supondo que x = 5 e y = 8, a seguinte saída é produzida:
+		c) Supondo que x = 5 e y = 8, a seguinte saï¿½da ï¿½ produzida:
 		@@@@@
 		
 		int x = 5;
@@ -776,7 +776,7 @@ public class exercicios {
 			}
 		}	
 		
-		d) Supondo que x = 5 e y = 7, a seguinte saída é produzida. [Observação: todas as três últimas instruções de saída depois do else são
+		d) Supondo que x = 5 e y = 7, a seguinte saï¿½da ï¿½ produzida. [Observaï¿½ï¿½o: todas as trï¿½s ï¿½ltimas instruï¿½ï¿½es de saï¿½da depois do else sï¿½o
 		partes de um bloco].
 		#####
 		$$$$$
@@ -794,8 +794,8 @@ public class exercicios {
 			System.out.println("&&&&&");
 		}
 		
-		4.29 (Quadrado de asteriscos) Escreva um aplicativo que solicita ao usuário que insira o tamanho do lado de um quadrado e, então, exibe um
-		quadrado vazio desse tamanho com asteriscos. Seu programa deve trabalhar com quadrados de todos os comprimentos de lado possíveis
+		4.29 (Quadrado de asteriscos) Escreva um aplicativo que solicita ao usuï¿½rio que insira o tamanho do lado de um quadrado e, entï¿½o, exibe um
+		quadrado vazio desse tamanho com asteriscos. Seu programa deve trabalhar com quadrados de todos os comprimentos de lado possï¿½veis
 		entre 1 e 20.
 		
 		String setTamanho = JOptionPane.showInputDialog("Insira o tamanho do lado de um quadrado:");
@@ -843,14 +843,14 @@ public class exercicios {
 			contador++;
 		}
 		
-		4.30 (Palíndromos) Um palíndromo é uma sequência de caracteres que é lida da esquerda para a direita ou da direita para a esquerda. Por
-		exemplo, cada um dos seguintes inteiros de cinco dígitos é um palíndromo: 12321, 55555, 45554 e 11611. Escreva um aplicativo que lê em
-		um inteiro de cinco dígitos e determina se ele é ou não um palíndromo. Se o número não for de cinco dígitos, exiba uma mensagem de
-		erro e permita que o usuário insira um novo valor.
+		4.30 (Palï¿½ndromos) Um palï¿½ndromo ï¿½ uma sequï¿½ncia de caracteres que ï¿½ lida da esquerda para a direita ou da direita para a esquerda. Por
+		exemplo, cada um dos seguintes inteiros de cinco dï¿½gitos ï¿½ um palï¿½ndromo: 12321, 55555, 45554 e 11611. Escreva um aplicativo que lï¿½ em
+		um inteiro de cinco dï¿½gitos e determina se ele ï¿½ ou nï¿½o um palï¿½ndromo. Se o nï¿½mero nï¿½o for de cinco dï¿½gitos, exiba uma mensagem de
+		erro e permita que o usuï¿½rio insira um novo valor.
 		
 		int pali=0;
 		
-		String setPali = JOptionPane.showInputDialog("Informe um número de 5 digitos:");			
+		String setPali = JOptionPane.showInputDialog("Informe um nï¿½mero de 5 digitos:");			
 		
 			System.out.print(setPali.substring(0,2));
 			System.out.print(setPali.substring(3,5));
@@ -858,22 +858,22 @@ public class exercicios {
 			if( setPali.substring(0,1).equals(setPali.substring(4,5))) {
 				if( setPali.substring(1,2).equals(setPali.substring(3,4))) {
 					pali = Integer.parseInt(setPali);
-					JOptionPane.showMessageDialog(null, "O valor inserido é um palídromo: "+pali);
+					JOptionPane.showMessageDialog(null, "O valor inserido ï¿½ um palï¿½dromo: "+pali);
 				}
 				
 			}else {
 				pali = Integer.parseInt(setPali);
-				JOptionPane.showMessageDialog(null, "O valor inserido não é um palídromo: "+pali);
+				JOptionPane.showMessageDialog(null, "O valor inserido nï¿½o ï¿½ um palï¿½dromo: "+pali);
 			}
 			
 			
-			4.31 (Imprimindo o equivalente decimal de um número binário) Escreva um aplicativo que insere um número inteiro que contém somente
-				0s e 1s (isto é, um número inteiro binário) e imprime seu equivalente decimal. [Dica: utilize os operadores de resto e divisão para
-				pegar os dígitos do número binário um de cada vez da direita para a esquerda. No sistema de números decimais, o dígito mais à direita
-				tem um valor posicional de 1 e o próximo dígito à esquerda um valor posicional de 10, depois 100, depois 1.000 e assim por diante. O
-				número decimal 234 pode ser interpretado como 4 * 1 + 3 * 10 + 2 * 100. No sistema de número binário, o dígito mais à direita tem um
-				valor posicional de 1, o próximo dígito à esquerda um valor posicional de 2, depois 4, depois 8 e assim por diante. O equivalente decimal
-				do binário 1.101 é 1 * 1 + 0 * 2 + 1 * 4 + 1 * 8 ou 1 + 0 + 4 + 8 ou 13.]			
+			4.31 (Imprimindo o equivalente decimal de um nï¿½mero binï¿½rio) Escreva um aplicativo que insere um nï¿½mero inteiro que contï¿½m somente
+				0s e 1s (isto ï¿½, um nï¿½mero inteiro binï¿½rio) e imprime seu equivalente decimal. [Dica: utilize os operadores de resto e divisï¿½o para
+				pegar os dï¿½gitos do nï¿½mero binï¿½rio um de cada vez da direita para a esquerda. No sistema de nï¿½meros decimais, o dï¿½gito mais ï¿½ direita
+				tem um valor posicional de 1 e o prï¿½ximo dï¿½gito ï¿½ esquerda um valor posicional de 10, depois 100, depois 1.000 e assim por diante. O
+				nï¿½mero decimal 234 pode ser interpretado como 4 * 1 + 3 * 10 + 2 * 100. No sistema de nï¿½mero binï¿½rio, o dï¿½gito mais ï¿½ direita tem um
+				valor posicional de 1, o prï¿½ximo dï¿½gito ï¿½ esquerda um valor posicional de 2, depois 4, depois 8 e assim por diante. O equivalente decimal
+				do binï¿½rio 1.101 ï¿½ 1 * 1 + 0 * 2 + 1 * 4 + 1 * 8 ou 1 + 0 + 4 + 8 ou 13.]			
 			
 						
 			int decimal = 0;
@@ -881,7 +881,7 @@ public class exercicios {
 			int multD = 1;
 			int aux=0;
 			
-				String setValor = JOptionPane.showInputDialog("Informe um número binário:");								
+				String setValor = JOptionPane.showInputDialog("Informe um nï¿½mero binï¿½rio:");								
 				
 				contador = setValor.length();
 				
@@ -898,15 +898,15 @@ public class exercicios {
 					contador--;
 				}
 				
-				JOptionPane.showMessageDialog(null, "O valor do binário informado é "+aux+" na base decimal!");
+				JOptionPane.showMessageDialog(null, "O valor do binï¿½rio informado ï¿½ "+aux+" na base decimal!");
 				
 				
-				4.32 (Padrão de tabuleiro de damas de asteriscos) Escreva um aplicativo que utiliza apenas as instruções de saída
+				4.32 (Padrï¿½o de tabuleiro de damas de asteriscos) Escreva um aplicativo que utiliza apenas as instruï¿½ï¿½es de saï¿½da
 				System.out.print("* ");
 				System.out.print(" ");
 				System.out.println();
-				para exibir o padrão de tabuleiro de damas a seguir. Uma chamada de método System.out.println sem argumentos faz com que o programa
-				gere saída de um único caractere de nova linha. [Dica: as instruções de repetição são requeridas.
+				para exibir o padrï¿½o de tabuleiro de damas a seguir. Uma chamada de mï¿½todo System.out.println sem argumentos faz com que o programa
+				gere saï¿½da de um ï¿½nico caractere de nova linha. [Dica: as instruï¿½ï¿½es de repetiï¿½ï¿½o sï¿½o requeridas.
 				
 				* * * * * * * *
 				 * * * * * * * *
@@ -917,7 +917,7 @@ public class exercicios {
 				* * * * * * * *
 				 * * * * * * * * 				 				 					
 		
-			String resposta = JOptionPane.showInputDialog("Informe o número de posições do tabuleiro:");
+			String resposta = JOptionPane.showInputDialog("Informe o nï¿½mero de posiï¿½ï¿½es do tabuleiro:");
 			int setResposta = Integer.parseInt(resposta);
 			
 			int contador=1;
@@ -957,9 +957,9 @@ public class exercicios {
 				contador++;
 			}
 			
-			4.33 (Múltiplos de 2 com um loop infinito) Escreva um aplicativo que continue exibindo na janela de comando os múltiplos do inteiro 2
-			— a saber, 2, 4, 8, 16, 32, 64 e assim por diante. Seu loop não deve terminar (isto é, deve criar um loop infinito). O que acontece quando
-			você executa esse programa?
+			4.33 (Mï¿½ltiplos de 2 com um loop infinito) Escreva um aplicativo que continue exibindo na janela de comando os mï¿½ltiplos do inteiro 2
+			ï¿½ a saber, 2, 4, 8, 16, 32, 64 e assim por diante. Seu loop nï¿½o deve terminar (isto ï¿½, deve criar um loop infinito). O que acontece quando
+			vocï¿½ executa esse programa?
 			
 		
 			int multDois=2;
@@ -972,7 +972,7 @@ public class exercicios {
 			}
 			
 			
-			4.34 (O que há de errado com esse código?) O que há de errado com a seguinte instrução? Forneça a instrução correta para adicionar 1 à
+			4.34 (O que hï¿½ de errado com esse cï¿½digo?) O que hï¿½ de errado com a seguinte instruï¿½ï¿½o? Forneï¿½a a instruï¿½ï¿½o correta para adicionar 1 ï¿½
 			soma de x e y.
 			System.out.println(++(x + y));
 			
@@ -983,13 +983,13 @@ public class exercicios {
 			System.out.println((++x)+ y);
 			
 			
-			4.35 (Lados de um triângulo) Escreva um aplicativo que lê três valores diferentes de zero inseridos pelo usuário, determina e
-			imprime se eles poderiam representar os lados de um triângulo.
+			4.35 (Lados de um triï¿½ngulo) Escreva um aplicativo que lï¿½ trï¿½s valores diferentes de zero inseridos pelo usuï¿½rio, determina e
+			imprime se eles poderiam representar os lados de um triï¿½ngulo.
 			
 		
 			int a, b, c;
 		
-			System.out.println("Informe o tamanho dos 3 lados de um triângulo:");
+			System.out.println("Informe o tamanho dos 3 lados de um triï¿½ngulo:");
 			a = entrada.nextInt();
 			b = entrada.nextInt();
 			c = entrada.nextInt();
@@ -1000,33 +1000,33 @@ public class exercicios {
 				
 				
 				while(a == 0 || b == 0 || c==0) {
-					System.out.println("Informe o tamanho dos 3 lados de um triângulo:");
+					System.out.println("Informe o tamanho dos 3 lados de um triï¿½ngulo:");
 					a = entrada.nextInt();
 					b = entrada.nextInt();
 					c = entrada.nextInt();
 				}
 				
 			}else if(a == b && b == c) {
-				System.out.println("Poderia ser um Triângulo Equilátero");
+				System.out.println("Poderia ser um Triï¿½ngulo Equilï¿½tero");
 			}else if(a==b && b!=c || a==c && b!=c ) {
-				System.out.println("Poderia ser um Triângulo Isóceles");
+				System.out.println("Poderia ser um Triï¿½ngulo Isï¿½celes");
 			}else {
-				System.out.println("Poderia ser um Triângulo Escaleno");
+				System.out.println("Poderia ser um Triï¿½ngulo Escaleno");
 			}
 			
 			
-			4.36 (Lados de um triângulo direito) Escreva um aplicativo que lê três inteiros diferentes de zero, determina e
-			 imprime se eles poderiam representar os lados de um triângulo direito.
+			4.36 (Lados de um triï¿½ngulo direito) Escreva um aplicativo que lï¿½ trï¿½s inteiros diferentes de zero, determina e
+			 imprime se eles poderiam representar os lados de um triï¿½ngulo direito.
 			
 				(FAZER)
 			
-			4.37 (Fatorial) O fatorial de um inteiro não negativo n é escrito como n! (pronuncia-se “n fatorial”) e é definido como segue:
-				n! = n · (n – 1) · (n – 2) · ... · 1 (para valores de n maiores ou iguais a 1)
+			4.37 (Fatorial) O fatorial de um inteiro nï¿½o negativo n ï¿½ escrito como n! (pronuncia-se ï¿½n fatorialï¿½) e ï¿½ definido como segue:
+				n! = n ï¿½ (n ï¿½ 1) ï¿½ (n ï¿½ 2) ï¿½ ... ï¿½ 1 (para valores de n maiores ou iguais a 1)
 				e
 				n! = 1 (para n = 0)
-				Por exemplo, 5! = 5 · 4 · 3 · 2 · 1, o que dá 120.
+				Por exemplo, 5! = 5 ï¿½ 4 ï¿½ 3 ï¿½ 2 ï¿½ 1, o que dï¿½ 120.
 				
-				a) Escreva um aplicativo que lê um inteiro não negativo, calcula e imprime seu fatorial.
+				a) Escreva um aplicativo que lï¿½ um inteiro nï¿½o negativo, calcula e imprime seu fatorial.
 		
 		
 					String setFator = JOptionPane.showInputDialog("Informe um inteiro positivo:");
@@ -1058,13 +1058,13 @@ public class exercicios {
 						contador++;
 					}
 					
-					JOptionPane.showMessageDialog(null, "O fator é: "+total);
+					JOptionPane.showMessageDialog(null, "O fator ï¿½: "+total);
 		
 		
-				b) Escreva um aplicativo que estima o valor da constante matemática (e) utilizando a fórmula a seguir. Permita ao usuário inserir o número
+				b) Escreva um aplicativo que estima o valor da constante matemï¿½tica (e) utilizando a fï¿½rmula a seguir. Permita ao usuï¿½rio inserir o nï¿½mero
 				de termos a calcular.
 				
-				e = 1 + 1/1! + 1/2!+ 1/3!+ …
+				e = 1 + 1/1! + 1/2!+ 1/3!+ ï¿½
 				
 					String setTerm = JOptionPane.showInputDialog("Informe quantos termos devemos calcular:");
 					int term = Integer.parseInt(setTerm);
@@ -1104,11 +1104,11 @@ public class exercicios {
 						}
 						
 						
-					String retorno = String.format("O valor de 'e' é: %.5f", total);
+					String retorno = String.format("O valor de 'e' ï¿½: %.5f", total);
 					JOptionPane.showMessageDialog(null, retorno);*/		
 		
-				/*c) Escreva um aplicativo que computa o valor de e*x utilizando a fórmula a seguir. Permita ao usuário inserir o número de termos a calcular.
-				e*X = 1+ x/1! + x*2/2! + x*3/3! + …
+				/*c) Escreva um aplicativo que computa o valor de e*x utilizando a fï¿½rmula a seguir. Permita ao usuï¿½rio inserir o nï¿½mero de termos a calcular.
+				e*X = 1+ x/1! + x*2/2! + x*3/3! + ï¿½
 		
 				String setXiz = JOptionPane.showInputDialog("Informe o valor de base:");
 				int base = Integer.parseInt(setXiz);
@@ -1160,7 +1160,7 @@ public class exercicios {
 								
 							}
 							
-						//calculando o valor da potência de x
+						//calculando o valor da potï¿½ncia de x
 																	
 							aux *= base;
 						
@@ -1178,38 +1178,38 @@ public class exercicios {
 					}
 					
 				
-				String retorno = String.format("O valor de 'e' é: %.2f", total);
+				String retorno = String.format("O valor de 'e' ï¿½: %.2f", total);
 				JOptionPane.showMessageDialog(null, retorno);
 		
-				4.38 (Impondo privacidade com criptografia) O crescimento explosivo de comunicação e armazenamento de dados na internet e em
-				computadores conectados por ela aumentou muito a preocupação com a privacidade. O campo da criptografia envolve a codificação de
-				dados para torná-los difíceis de acessar (e espera-se — com os esquemas mais avançados — impossíveis de acessar) para usuários sem
-				autorização de leitura. Nesse exercício, você investigará um esquema simples para criptografar e descriptografar dados. Uma empresa que
+				4.38 (Impondo privacidade com criptografia) O crescimento explosivo de comunicaï¿½ï¿½o e armazenamento de dados na internet e em
+				computadores conectados por ela aumentou muito a preocupaï¿½ï¿½o com a privacidade. O campo da criptografia envolve a codificaï¿½ï¿½o de
+				dados para tornï¿½-los difï¿½ceis de acessar (e espera-se ï¿½ com os esquemas mais avanï¿½ados ï¿½ impossï¿½veis de acessar) para usuï¿½rios sem
+				autorizaï¿½ï¿½o de leitura. Nesse exercï¿½cio, vocï¿½ investigarï¿½ um esquema simples para criptografar e descriptografar dados. Uma empresa que
 				quer enviar dados pela internet pediu-lhe que escrevesse um programa que criptografe dados a fim de que eles possam ser transmitidos
-				com maior segurança. Todos os dados são transmitidos como inteiros de quatro dígitos. Seu aplicativo deve ler um inteiro de quatro dígitos
-				inserido pelo usuário e criptografá-lo da seguinte maneira: substitua cada dígito pelo resultado da adição de 7 ao dígito, obtendo o restante
-				depois da divisão do novo valor por 10. Troque então o primeiro dígito pelo terceiro e o segundo dígito pelo quarto. Então, imprima o
-				inteiro criptografado. Escreva um aplicativo separado que receba a entrada de um inteiro de quatro dígitos criptografado e o descriptografe
-				(revertendo o esquema de criptografia) para formar o número original. [Projeto de leitura opcional: pesquise a “criptografia de chave
-				pública” em geral e o esquema de chave pública específica PGP (Pretty Good Privacy). Você também pode querer investigar o esquema
-				RSA, que é amplamente usado em aplicativos robustos industriais.]
+				com maior seguranï¿½a. Todos os dados sï¿½o transmitidos como inteiros de quatro dï¿½gitos. Seu aplicativo deve ler um inteiro de quatro dï¿½gitos
+				inserido pelo usuï¿½rio e criptografï¿½-lo da seguinte maneira: substitua cada dï¿½gito pelo resultado da adiï¿½ï¿½o de 7 ao dï¿½gito, obtendo o restante
+				depois da divisï¿½o do novo valor por 10. Troque entï¿½o o primeiro dï¿½gito pelo terceiro e o segundo dï¿½gito pelo quarto. Entï¿½o, imprima o
+				inteiro criptografado. Escreva um aplicativo separado que receba a entrada de um inteiro de quatro dï¿½gitos criptografado e o descriptografe
+				(revertendo o esquema de criptografia) para formar o nï¿½mero original. [Projeto de leitura opcional: pesquise a ï¿½criptografia de chave
+				pï¿½blicaï¿½ em geral e o esquema de chave pï¿½blica especï¿½fica PGP (Pretty Good Privacy). Vocï¿½ tambï¿½m pode querer investigar o esquema
+				RSA, que ï¿½ amplamente usado em aplicativos robustos industriais.]
 				
-			//Recebendo os dados do usuário e criptografando:
+			//Recebendo os dados do usuï¿½rio e criptografando:
 		
-				String dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dígitos:");
+				String dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dï¿½gitos:");
 				int setDados = Integer.parseInt(dados);
 				
 				if(setDados > 10000) {
 					JOptionPane.showMessageDialog(null, "ain. Valor muito grande!!");
 						while(setDados > 10000) {
-							dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dígitos:");
+							dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dï¿½gitos:");
 							setDados = Integer.parseInt(dados);
 						}
 				}else if(setDados < 1000){
 					
 					JOptionPane.showMessageDialog(null, "ain. Valor muito pequeno!!");
 						while(setDados < 1000) {
-							dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dígitos:");
+							dados = JOptionPane.showInputDialog("Informe um inteiro de 4 dï¿½gitos:");
 							setDados = Integer.parseInt(dados);
 						}
 				}
@@ -1293,22 +1293,22 @@ public class exercicios {
 				JOptionPane.showMessageDialog(null, retorno);
 				
 				
-				4.39 (Crescimento demográfico mundial) A população mundial cresceu consideravelmente ao longo dos séculos. O crescimento contínuo
-				pode, por fim, desafiar os limites de ar respirável, água potável, terra fértil para agricultura e outros recursos limitados.
-				Há evidência de que o crescimento tem reduzido a velocidade nos últimos anos e que a população mundial pode chegar ao ponto
-				máximo em algum momento  nesse século e, então, começar a diminuir. Para esse exercício, pesquise questões de crescimento demográfico
-				mundial on-line. Não deixe de investigar vários pontos de vista.
-				Obtenha estimativas da população mundial atual e sua taxa de crescimento (a porcentagem pela qual provavelmente aumentará neste
-				ano). Escreva um programa que calcule o crescimento demográfico mundial anual dos próximos 75 anos, utilizando a premissa simplificadora
-				de que a taxa de crescimento atual ficará constante. Imprima os resultados em uma tabela. A primeira coluna deve exibir os anos
-				do ano 1 ao ano 75. A segunda coluna deve exibir a população mundial esperada no fim desse ano. A terceira deve exibir o aumento numérico
-				na população mundial que ocorreria nesse ano. Utilizando os seus resultados, determine o ano em que a população dobraria com relação
-				ao número de hoje se a taxa de crescimento do ano atual persistisse.*/
+				4.39 (Crescimento demogrï¿½fico mundial) A populaï¿½ï¿½o mundial cresceu consideravelmente ao longo dos sï¿½culos. O crescimento contï¿½nuo
+				pode, por fim, desafiar os limites de ar respirï¿½vel, ï¿½gua potï¿½vel, terra fï¿½rtil para agricultura e outros recursos limitados.
+				Hï¿½ evidï¿½ncia de que o crescimento tem reduzido a velocidade nos ï¿½ltimos anos e que a populaï¿½ï¿½o mundial pode chegar ao ponto
+				mï¿½ximo em algum momento  nesse sï¿½culo e, entï¿½o, comeï¿½ar a diminuir. Para esse exercï¿½cio, pesquise questï¿½es de crescimento demogrï¿½fico
+				mundial on-line. Nï¿½o deixe de investigar vï¿½rios pontos de vista.
+				Obtenha estimativas da populaï¿½ï¿½o mundial atual e sua taxa de crescimento (a porcentagem pela qual provavelmente aumentarï¿½ neste
+				ano). Escreva um programa que calcule o crescimento demogrï¿½fico mundial anual dos prï¿½ximos 75 anos, utilizando a premissa simplificadora
+				de que a taxa de crescimento atual ficarï¿½ constante. Imprima os resultados em uma tabela. A primeira coluna deve exibir os anos
+				do ano 1 ao ano 75. A segunda coluna deve exibir a populaï¿½ï¿½o mundial esperada no fim desse ano. A terceira deve exibir o aumento numï¿½rico
+				na populaï¿½ï¿½o mundial que ocorreria nesse ano. Utilizando os seus resultados, determine o ano em que a populaï¿½ï¿½o dobraria com relaï¿½ï¿½o
+				ao nï¿½mero de hoje se a taxa de crescimento do ano atual persistisse.*/
 				
 				//taxa de crescimento populacional em 2020 segundo a ONU: 1.1%
-				//população mundial em 2020 segundo a ONU: 7.794.799.000
+				//populaï¿½ï¿½o mundial em 2020 segundo a ONU: 7.794.799.000
 				
-				//Criando e inicializando variáveis globais
+				//Criando e inicializando variï¿½veis globais
 				String porcentagem = "";
 				String popTotal = "";
 				String controleAnos = "";
@@ -1318,7 +1318,7 @@ public class exercicios {
 				
 				do {
 					
-					porcentagem = JOptionPane.showInputDialog("Informe a taxa de crecimento anual da população mundial:");
+					porcentagem = JOptionPane.showInputDialog("Informe a taxa de crecimento anual da populaï¿½ï¿½o mundial:");
 					if(porcentagem.length() > 1) {
 						
 						setPorcentagem = Double.parseDouble(porcentagem);
@@ -1326,14 +1326,14 @@ public class exercicios {
 					}
 					
 					
-					popTotal = JOptionPane.showInputDialog("Informe o valor da população mundial:");					
+					popTotal = JOptionPane.showInputDialog("Informe o valor da populaï¿½ï¿½o mundial:");					
 					if(popTotal.length() > 1) {
 						
 						setPopTotal = Double.parseDouble(popTotal);
 						System.out.println("setPopTotal: "+setPopTotal);
 					}	
 					
-					controleAnos = JOptionPane.showInputDialog("Informe quantos anos serão calculados:");					
+					controleAnos = JOptionPane.showInputDialog("Informe quantos anos serï¿½o calculados:");					
 					if(controleAnos.length() > 1) {
 						
 						setControleAnos = Integer.parseInt(controleAnos);
@@ -1341,9 +1341,6 @@ public class exercicios {
 					}	
 
 				}while(porcentagem.length()<1 || popTotal.length() < 1 || controleAnos.length() < 1 );
-				
-				double aux = 0.0;
-
 				
 				double tabela [][] = new double [setControleAnos][3];
 				
@@ -1365,13 +1362,13 @@ public class exercicios {
 						}else if(j == 1) {
 							
 
-							tabela [i][j] = (setPorcentagem/100) * (setPopTotal*i);//A segunda coluna deve exibir a população mundial esperada no fim desse ano.
+							tabela [i][j] = (setPorcentagem/100) * (setPopTotal*i);//A segunda coluna deve exibir a populaï¿½ï¿½o mundial esperada no fim desse ano.
 							
 							System.out.printf("%.0f | ",tabela [i][j]);
 							
 						}else if(j == 2 && i > 0){
 														
-							tabela [i][j]= tabela[i][2];//A terceira deve exibir o aumento numérico na população mundial que ocorreria nesse ano.
+							tabela [i][j]= tabela[i][2];//A terceira deve exibir o aumento numï¿½rico na populaï¿½ï¿½o mundial que ocorreria nesse ano.
 							System.out.printf("%.0f\n",tabela [i][j]);
 							
 						}
@@ -1380,7 +1377,7 @@ public class exercicios {
 						j = 0;
 
 				}
-									
+				entrada.close();
 		
 	}
 

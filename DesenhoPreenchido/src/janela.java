@@ -7,11 +7,14 @@ import javax.swing.JPanel;
  *
  */
 public class janela extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		
-		int x = getWidth();
-		int y = getHeight();
 		
 		g.setColor(Color.YELLOW);
 		g.fillOval(10,10,200,200);

@@ -22,8 +22,8 @@ public class Media {
 		
 		int media = total / 10;
 		
-		System.out.printf("total de notas inseridas: %d%nMédia da classe: %d",total, media);
-
+		System.out.printf("total de notas inseridas: %d%nMï¿½dia da classe: %d",total, media);
+		entrada.close();
 	}
 
 }

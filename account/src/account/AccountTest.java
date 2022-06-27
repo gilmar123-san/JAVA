@@ -1,6 +1,6 @@
 package account;
 
-//chamado a classe scanner para receber entrada de dados dos usuários
+//chamado a classe scanner para receber entrada de dados dos usuï¿½rios
 import java.util.Scanner;
 
 //importando a classe joptionpane para criar caixas de dialogos.
@@ -33,15 +33,15 @@ public class AccountTest {
 		
 		//Solicitando o nome:
 		System.out.print("Por favor, insira seu nome: ");
-		String nome = entrada.nextLine();//cria uma varíavel que recebe um valor e vira parametro posteriormente
-		myAccount.setNome(nome);//passando o parametro recebido anteriormente na classe Account,mna varíavel de instância nome
+		String nome = entrada.nextLine();//cria uma varï¿½avel que recebe um valor e vira parametro posteriormente
+		myAccount.setNome(nome);//passando o parametro recebido anteriormente na classe Account,mna varï¿½avel de instï¿½ncia nome
 		
 		System.out.println();//Imprime uma linha em brano
 		
 		//solicitando o valor do deposito.
 		System.out.print("Por favor, insira o valor do deposito: ");
-		double deposito = entrada.nextDouble();//cria uma varíavel que recebe um valor e vira parametro posteriormente
-		myAccount.setBalance(deposito);//passando o parametro recebido anteriormente na classe Account,mna varíavel de instância nome
+		double deposito = entrada.nextDouble();//cria uma varï¿½avel que recebe um valor e vira parametro posteriormente
+		myAccount.setBalance(deposito);//passando o parametro recebido anteriormente na classe Account,mna varï¿½avel de instï¿½ncia nome
 		
 		System.out.println();//Imprime uma linha em brano
 		
@@ -49,7 +49,7 @@ public class AccountTest {
 		System.out.printf("Dono da conta: %s%nSaldo: %.2f ", myAccount.getNome(), myAccount.getBalance());
 		
 		JOptionPane.showMessageDialog(null, "Dono da conta");
-		
+		entrada.close();
 	}
 
 }

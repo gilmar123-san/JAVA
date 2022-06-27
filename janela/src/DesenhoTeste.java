@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class DesenhoTeste {
 
@@ -8,7 +9,7 @@ public class DesenhoTeste {
 		
 		JFrame janela = new JFrame();
 		
-		janela.setDefaultCloseOperation(janela.EXIT_ON_CLOSE);
+		janela.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 		janela.add(painel);
 		janela.setSize(400,400);

@@ -1,7 +1,5 @@
 package Invoice;
 
-import javax.swing.JOptionPane;
-
 public class Invoice {
 	
 	private String numero;

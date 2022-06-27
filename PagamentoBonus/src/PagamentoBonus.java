@@ -30,7 +30,7 @@ public class PagamentoBonus {
 		if(aprovados>8) {
 			System.out.println("Bonus para o instrutor!!");
 		}
-
+		entrada.close();
 	}
 
 }

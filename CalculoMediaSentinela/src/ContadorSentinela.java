@@ -25,13 +25,12 @@ public class ContadorSentinela {
 		if(contador!=0) {
 			
 			double media = (double) total/contador;	
-			System.out.println("Média: "+media);
+			System.out.println("Mï¿½dia: "+media);
 		}else {
 			System.out.println("Nenhum valor informado!");
 		}
-		
-		
-		
+
+		entra.close();
 	}
 
 }

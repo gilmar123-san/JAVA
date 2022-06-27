@@ -7,10 +7,8 @@ public class Janelas_01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int soma;
-		
-		//Saudação
-		String message = String.format("Olá Seja bem-vindo à calculadora");
+		//Saudaï¿½ï¿½o
+		String message = String.format("Olï¿½ Seja bem-vindo ï¿½ calculadora");
 		//Mostrando a primeira mensagem	
 		JOptionPane.showMessageDialog(null, message);
 		
