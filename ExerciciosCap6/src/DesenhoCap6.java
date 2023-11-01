@@ -4,6 +4,12 @@ import javax.swing.JPanel;
 
 public class DesenhoCap6 extends JPanel {
 
+	private final static Color VIOLET = new Color(128, 0, 128);
+	private final static Color INDIGO = new Color(75, 0, 130);
+
+	private Color[] colors = { Color.WHITE, Color.WHITE, VIOLET, INDIGO, Color.BLUE, Color.GREEN, Color.YELLOW,
+			Color.ORANGE, Color.RED };
+
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 
@@ -27,9 +33,16 @@ public class DesenhoCap6 extends JPanel {
 		 * 
 		 * if (lado >= 4) { lado = 1; } }
 		 */
-		
-		
 
+		int radius = 20; // raio de um arco
+		int centerX = getWidth() / 2;
+		int centerY = getHeight() - 10;
+		g.setColor(Color.BLUE);
+		for (int counter = colors.length; counter > 0; counter--) {
+
+			g.fillArc(centerX - counter * radius, centerY - counter * radius, counter * radius * 2,
+					counter * radius * 2, 0, 180);
+		}
 	}
 
 }
